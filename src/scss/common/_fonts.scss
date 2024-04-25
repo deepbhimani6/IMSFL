@@ -1,0 +1,233 @@
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-ExtraBoldItalic.eot?#iefix",
+    "../fonts/WorkSans-ExtraBoldItalic.eot",
+    "../fonts/WorkSans-ExtraBoldItalic.woff",
+    "../fonts/WorkSans-ExtraBoldItalic.woff2",
+    "../fonts/WorkSans-ExtraBoldItalic.ttf",
+    bold,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-ExtraLight.eot?#iefix",
+    "../fonts/WorkSans-ExtraLight.eot",
+    "../fonts/WorkSans-ExtraLight.woff",
+    "../fonts/WorkSans-ExtraLight.woff2",
+    "../fonts/WorkSans-ExtraLight.ttf",
+    200,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Italic.eot?#iefix",
+    "../fonts/WorkSans-Italic.eot",
+    "../fonts/WorkSans-Italic.woff",
+    "../fonts/WorkSans-Italic.woff2",
+    "../fonts/WorkSans-Italic.ttf",
+    normal,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Light.eot?#iefix",
+    "../fonts/WorkSans-Light.eot",
+    "../fonts/WorkSans-Light.woff",
+    "../fonts/WorkSans-Light.woff2",
+    "../fonts/WorkSans-Light.ttf",
+    300,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-ExtraLightItalic.eot?#iefix",
+    "../fonts/WorkSans-ExtraLightItalic.eot",
+    "../fonts/WorkSans-ExtraLightItalic.woff",
+    "../fonts/WorkSans-ExtraLightItalic.woff2",
+    "../fonts/WorkSans-ExtraLightItalic.ttf",
+    200,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Regular.eot?#iefix",
+    "../fonts/WorkSans-Regular.eot",
+    "../fonts/WorkSans-Regular.woff",
+    "../fonts/WorkSans-Regular.woff2",
+    "../fonts/WorkSans-Regular.ttf",
+    normal,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-MediumItalic.eot?#iefix",
+    "../fonts/WorkSans-MediumItalic.eot",
+    "../fonts/WorkSans-MediumItalic.woff",
+    "../fonts/WorkSans-MediumItalic.woff2",
+    "../fonts/WorkSans-MediumItalic.ttf",
+    500,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-SemiBoldItalic.eot?#iefix",
+    "../fonts/WorkSans-SemiBoldItalic.eot",
+    "../fonts/WorkSans-SemiBoldItalic.woff",
+    "../fonts/WorkSans-SemiBoldItalic.woff2",
+    "../fonts/WorkSans-SemiBoldItalic.ttf",
+    600,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-BlackItalic.eot?#iefix",
+    "../fonts/WorkSans-BlackItalic.eot",
+    "../fonts/WorkSans-BlackItalic.woff",
+    "../fonts/WorkSans-BlackItalic.woff2",
+    "../fonts/WorkSans-BlackItalic.ttf",
+    900,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Medium.eot?#iefix",
+    "../fonts/WorkSans-Medium.eot",
+    "../fonts/WorkSans-Medium.woff",
+    "../fonts/WorkSans-Medium.woff2",
+    "../fonts/WorkSans-Medium.ttf",
+    500,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Thin.eot?#iefix",
+    "../fonts/WorkSans-Thin.eot",
+    "../fonts/WorkSans-Thin.woff",
+    "../fonts/WorkSans-Thin.woff2",
+    "../fonts/WorkSans-Thin.ttf",
+    100,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-SemiBold.eot?#iefix",
+    "../fonts/WorkSans-SemiBold.eot",
+    "../fonts/WorkSans-SemiBold.woff",
+    "../fonts/WorkSans-SemiBold.woff2",
+    "../fonts/WorkSans-SemiBold.ttf",
+    600,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Black.eot?#iefix",
+    "../fonts/WorkSans-Black.eot",
+    "../fonts/WorkSans-Black.woff",
+    "../fonts/WorkSans-Black.woff2",
+    "../fonts/WorkSans-Black.ttf",
+    900,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-ThinItalic.eot?#iefix",
+    "../fonts/WorkSans-ThinItalic.eot",
+    "../fonts/WorkSans-ThinItalic.woff",
+    "../fonts/WorkSans-ThinItalic.woff2",
+    "../fonts/WorkSans-ThinItalic.ttf",
+    100,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-LightItalic.eot?#iefix",
+    "../fonts/WorkSans-LightItalic.eot",
+    "../fonts/WorkSans-LightItalic.woff",
+    "../fonts/WorkSans-LightItalic.woff2",
+    "../fonts/WorkSans-LightItalic.ttf",
+    300,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-BoldItalic.eot?#iefix",
+    "../fonts/WorkSans-BoldItalic.eot",
+    "../fonts/WorkSans-BoldItalic.woff",
+    "../fonts/WorkSans-BoldItalic.woff2",
+    "../fonts/WorkSans-BoldItalic.ttf",
+    bold,
+    italic
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-Bold.eot?#iefix",
+    "../fonts/WorkSans-Bold.eot",
+    "../fonts/WorkSans-Bold.woff",
+    "../fonts/WorkSans-Bold.woff2",
+    "../fonts/WorkSans-Bold.ttf",
+    bold,
+    normal
+  );
+}
+
+@font-face {
+  @include font-face(
+    "Work Sans",
+    "../fonts/WorkSans-ExtraBold.eot?#iefix",
+    "../fonts/WorkSans-ExtraBold.eot",
+    "../fonts/WorkSans-ExtraBold.woff",
+    "../fonts/WorkSans-ExtraBold.woff2",
+    "../fonts/WorkSans-ExtraBold.ttf",
+    bold,
+    normal
+  );
+}

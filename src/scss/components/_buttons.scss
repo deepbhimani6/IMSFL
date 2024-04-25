@@ -1,0 +1,77 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.btn {
+  line-height: 1;
+  font-weight: 500;
+  padding: 20px 40px;
+  background-color: $lightBlack;
+  color: $light;
+  @include generate-fontsize($bodyM);
+  border-radius: 20px;
+  border: 1px solid $lightBlack;
+  &.bodyS {
+    @include generate-fontsize($bodyS);
+  }
+  &.btn-text-white {
+    color: $white;
+  }
+  &:hover {
+    border: 1px solid $lightBlack;
+    color: $lightBlack;
+    background-color: transparent;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: $lightBlack;
+  &:hover {
+    color: $white;
+    background-color: $lightBlack;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  color: $lightBlack;
+  &:hover {
+    color: $white;
+    background-color: $lightBlack;
+  }
+}
+
+.btn-icon {
+  width: $headingM;
+  height: $headingM;
+  border-radius: 50%;
+  color: $lightBlack;
+  background-color: transparent;
+  border: 1px solid $lightBlack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  .btn-icon {
+    transform: translateX(4px);
+  }
+}
+
+.btn-with-icon {
+  h5 {
+    padding-right: 10px;
+  }
+  &:hover {
+    .btn-icon {
+      transform: translateX(4px);
+    }
+  }
+}

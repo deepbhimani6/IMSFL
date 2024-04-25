@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.416" height="14.417" viewBox="0 0 14.416 14.417">
+  <g id="Group_3228" data-name="Group 3228" transform="translate(-556 -39)">
+    <g id="Group_3228-2" data-name="Group 3228" transform="translate(556 39)">
+      <g id="Ellipse_407" data-name="Ellipse 407" transform="translate(0 0)" fill="none" stroke="#2a2f33" stroke-width="1">
+        <ellipse cx="7.208" cy="7.208" rx="7.208" ry="7.208" stroke="none"/>
+        <ellipse cx="7.208" cy="7.208" rx="6.708" ry="6.708" fill="none"/>
+      </g>
+    </g>
+    <text id="_" data-name="+" transform="translate(563 50)" fill="#18242a" font-size="10" font-family="ArialMT, Arial"><tspan x="-2" y="0">+</tspan></text>
+  </g>
+</svg>

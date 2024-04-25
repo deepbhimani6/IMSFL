@@ -1,0 +1,147 @@
+/*******************************************************************************
+******************************* COLOUR VARIABLES *******************************
+*******************************************************************************/
+
+$primary: #b990f6;
+$secondary: #f5bf64;
+$black: #1b2429;
+$lightBlack: #18242a;
+$white: #ffffff;
+$light: #fefaf4;
+$gray: #a0a8ae;
+$lightgray: #b2b2b2;
+$gray-25: rgba(112, 112, 112, 0.25);
+
+/*******************************************************************************
+******************************* FONTS VARIABLES *******************************
+*******************************************************************************/
+
+$bodyL: 18px;
+$bodyM: 16px;
+$bodyS: 14px;
+$bodyXS: 12px;
+
+$headingXL: 48px;
+$headingL: 40px;
+$headingM: 38px;
+$headingS: 28px;
+$headingXS: 18px;
+$headingXXS: 15px;
+
+$buttonSize: 15px;
+$taglineSize: 12px;
+$menuSize: 10px;
+
+/*******************************************************************************
+******************************* ANIMATION VARIABLES ****************************
+*******************************************************************************/
+
+@mixin generate-transition($name, $duration, $type) {
+  -webkit-transition: $name $duration $type; /* Safari 4+ */
+  -moz-transition: $name $duration $type; /* Fx 5+ */
+  -o-transition: $name $duration $type; /* Opera 12+ */
+  transition: $name $duration $type; /* IE 10+, Fx 29+ */
+}
+
+@mixin generate-placeholder($color, $fontsize) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $fontsize;
+  }
+}
+
+// font mixin
+
+@mixin generate-fontsize($fontsize) {
+  font-size: $fontsize;
+}
+
+@mixin generate-font($fontsize, $fontweight, $fontcolor, $lineheight) {
+  @if ($fontsize != false) {
+    font-size: $fontsize;
+  }
+  @if ($fontweight != false) {
+    font-weight: $fontweight;
+  }
+  @if ($fontcolor != false) {
+    color: $fontcolor;
+  }
+  @if ($lineheight != false) {
+    line-height: $lineheight;
+  }
+}
+
+// animation mixin
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@include keyframes(rotate) {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// font-face mixin
+
+@mixin font-face(
+  $fontfamily: myFont,
+  $embedded-opentypeFileSrc: "myFont.embedded-opentype",
+  $eotFileSrc: "myFont.eot",
+  $woffFileSrc: "myFont.woff",
+  $woff2FileSrc: "myFont.woff2",
+  $truetypeFileSrc: "myFont.truetype",
+  $fontWeight: normal,
+  $fontStyle: normal
+) {
+  font-family: $fontfamily;
+  src: url($eotFileSrc);
+  src: url($embedded-opentypeFileSrc) format("embedded-opentype"),
+    url($woff2FileSrc) format("woff2"), url($woffFileSrc) format("woff"),
+    url($truetypeFileSrc) format("truetype");
+  font-weight: $fontWeight;
+  font-style: $fontStyle;
+  font-display: swap;
+}

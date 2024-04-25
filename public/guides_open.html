@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IMSFL - Guides open</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/logo/favicon-logo.png" sizes="32x32" type="image/png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ixj0tmp.css">
+</head>
+
+<body x-data="{megaMenuOpen : false}" :class="megaMenuOpen && window.innerWidth > 1024 ? 'fixed-bg' : '' " class="bg--light">
+
+    <!-- header -->
+    <header class="position-fixed top-0 start-0 w-100 border-bottom border--dark">
+        <!-- menu -->
+        <div x-data="{searchBtnOpen : false}" class="py-3 navbar transition">
+            <div class="container">
+                <div class="col-12 col-lg-3 d-flex align-items-center justify-content-between">
+                    <!-- logo -->
+                    <a :class="searchBtnOpen && 1024 > window.innerWidth ? 'hide' : '' " href="index.html" class="logo d-inline-block navbar-brand p-0 me-0 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-block" width="208.213" height="37.59" viewBox="0 0 208.213 37.59">
+                            <g id="Layer_1-2" transform="translate(-0.005 0)">
+                                <g id="Group_2753" data-name="Group 2753" transform="translate(0.005 0)">
+                                    <path id="Path_12944" data-name="Path 12944" d="M218.452,13.043l-1.173-.929a12.511,12.511,0,0,0-7.835-2.733,12.675,12.675,0,0,0-8.451,3.221l-1.873-2.094a15.416,15.416,0,0,1,10.324-3.936,15.209,15.209,0,0,1,8.4,2.5A23.822,23.822,0,0,1,236.557,0a24.209,24.209,0,0,1,19.172,9.753l-2.269,1.66a20.96,20.96,0,0,0-34.148.4l-.853,1.226Z" transform="translate(-47.516 0)" fill="#18242a" />
+                                    <rect id="Rectangle_1029" data-name="Rectangle 1029" width="21.669" height="4.957" transform="translate(0 36.289) rotate(-89.92)" fill="#18242a" />
+                                    <path id="Path_12945" data-name="Path 12945" d="M25.118,33.206l-.015,9.5H20.458l.015-8.832a2.56,2.56,0,0,0-2.688-2.825c-1.706,0-2.878.99-2.886,3.183l-.015,8.451H10.24L10.263,27.2h4.644v1.462a5.3,5.3,0,0,1,4.431-1.881c3.129,0,5.787,2.238,5.779,6.418" transform="translate(-2.447 -6.39)" fill="#18242a" />
+                                    <path id="Path_12946" data-name="Path 12946" d="M44.683,38.094c0,3.563-3.1,5.071-6.449,5.071-3.1,0-5.444-1.188-6.655-3.693l4.028-2.284a2.534,2.534,0,0,0,2.627,1.827c1.112,0,1.675-.335,1.675-.959,0-1.706-7.614-.815-7.606-6.175,0-3.373,2.855-5.071,6.076-5.071a6.76,6.76,0,0,1,6.03,3.32l-3.967,2.132A2.243,2.243,0,0,0,38.372,30.9c-.807,0-1.3.3-1.3.868,0,1.766,7.614.6,7.606,6.327" transform="translate(-7.539 -6.397)" fill="#18242a" />
+                                    <path id="Path_12947" data-name="Path 12947" d="M65.5,27.423,65.475,42.9H60.83V41.44A5.283,5.283,0,0,1,56.4,43.321c-3.129,0-5.787-2.238-5.779-6.418l.015-9.5H55.28l-.015,8.832a2.56,2.56,0,0,0,2.688,2.825c1.706,0,2.878-.99,2.886-3.183l.015-8.451H65.5Z" transform="translate(-12.082 -6.538)" fill="#18242a" />
+                                    <path id="Path_12948" data-name="Path 12948" d="M82.972,27.04V32.3c-1.926-.312-4.652.457-4.66,3.525v7H73.66l.023-15.479h4.644v2.764a4.659,4.659,0,0,1,4.652-3.061" transform="translate(-17.58 -6.452)" fill="#18242a" />
+                                    <path id="Path_12949" data-name="Path 12949" d="M98.167,35.075A3.683,3.683,0,1,0,90.8,35.06a3.686,3.686,0,1,0,7.37.015m4.652-7.736L102.8,42.818H98.159V41.356a5.8,5.8,0,0,1-4.614,1.881c-4.058,0-7.393-3.571-7.385-8.185s3.358-8.17,7.408-8.162a5.812,5.812,0,0,1,4.614,1.9V27.332h4.644Z" transform="translate(-20.562 -6.416)" fill="#18242a" />
+                                    <path id="Path_12950" data-name="Path 12950" d="M126.418,33.346l-.015,9.5h-4.644l.015-8.832a2.56,2.56,0,0,0-2.688-2.825c-1.706,0-2.878.99-2.886,3.183l-.015,8.451H111.54l.023-15.487h4.644V28.8a5.3,5.3,0,0,1,4.431-1.881c3.129,0,5.787,2.238,5.779,6.418" transform="translate(-26.618 -6.423)" fill="#18242a" />
+                                    <path id="Path_12951" data-name="Path 12951" d="M133.3,35.132a8.186,8.186,0,0,1,15.2-4.188l-4.058,2.345a3.192,3.192,0,0,0-3-1.736,3.405,3.405,0,0,0-3.5,3.586,3.4,3.4,0,0,0,3.495,3.594,3.179,3.179,0,0,0,3.007-1.728l4.051,2.33a7.89,7.89,0,0,1-7,3.982,8.015,8.015,0,0,1-8.193-8.185" transform="translate(-31.811 -6.435)" fill="#18242a" />
+                                    <path id="Path_12952" data-name="Path 12952" d="M164.829,33.566a3.49,3.49,0,0,0-6.662-.008h6.655Zm-2.855,5.642a4.071,4.071,0,0,0,2.977-1.173l3.708,2.139a7.878,7.878,0,0,1-6.753,3.183c-5.292-.008-8.573-3.571-8.566-8.185a7.934,7.934,0,0,1,8.246-8.162,7.809,7.809,0,0,1,7.85,8.185,8.635,8.635,0,0,1-.19,1.858l-10.987-.015c.586,1.614,2.01,2.17,3.708,2.17" transform="translate(-36.592 -6.445)" fill="#18242a" />
+                                    <g id="Group_2752" data-name="Group 2752" transform="translate(133.696 13.888)">
+                                        <path id="Path_12953" data-name="Path 12953" d="M189.389,38.062a5.474,5.474,0,0,1-4.957,2.84,5.893,5.893,0,0,1,.015-11.786,5.146,5.146,0,0,1,4.835,2.817l.327.708,2.49-1.454-.266-.579a7.9,7.9,0,0,0-7.378-4.378,8.783,8.783,0,1,0-.023,17.565,8.317,8.317,0,0,0,7.5-4.3l.3-.586-2.5-1.492-.35.647Z" transform="translate(-175.6 -20.147)" fill="#18242a" />
+                                        <rect id="Rectangle_1030" data-name="Rectangle 1030" width="21.631" height="2.954" transform="translate(17.68 23.318) rotate(-89.92)" fill="#18242a" />
+                                        <path id="Path_12954" data-name="Path 12954" d="M213.675,26.27a8.783,8.783,0,1,0,8.8,8.794A8.725,8.725,0,0,0,213.675,26.27Zm5.817,8.794a5.848,5.848,0,1,1-5.825-5.9A5.8,5.8,0,0,1,219.492,35.064Z" transform="translate(-182.572 -20.156)" fill="#18242a" />
+                                        <path id="Path_12955" data-name="Path 12955" d="M241.12,35.633c0,3.419-1.774,5.459-4.721,5.452-2.444,0-3.845-1.462-3.845-4.013l.015-10.332h-2.985l-.015,10.324c0,4.188,2.627,6.9,6.7,6.906a6.661,6.661,0,0,0,4.842-1.827v1.492h2.947l.023-16.888h-2.954l-.015,8.87Z" transform="translate(-188.478 -20.268)" fill="#18242a" />
+                                        <path id="Path_12956" data-name="Path 12956" d="M264.935,18.248l-.015,8.307a8.052,8.052,0,0,0-5.946-2.467,8.783,8.783,0,0,0-.023,17.565A8.045,8.045,0,0,0,264.9,39.2v2.117h2.947l.03-23.078h-2.954Zm-5.893,20.512a5.893,5.893,0,1,1,5.87-5.886A5.815,5.815,0,0,1,259.042,38.759Z" transform="translate(-193.41 -18.24)" fill="#18242a" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="d-sm-none" width="158.999" height="28.705" viewBox="0 0 158.999 28.705">
+                            <g id="Layer_1-2" transform="translate(-0.005 0)">
+                                <g id="Group_2753" data-name="Group 2753" transform="translate(0.005 0)">
+                                    <path id="Path_12944" data-name="Path 12944" d="M213.882,9.96l-.9-.709A9.554,9.554,0,0,0,207,7.163a9.679,9.679,0,0,0-6.454,2.459l-1.43-1.6A11.772,11.772,0,0,1,207,5.018a11.614,11.614,0,0,1,6.413,1.907A18.191,18.191,0,0,1,227.709,0a18.487,18.487,0,0,1,14.64,7.448l-1.733,1.268a16.006,16.006,0,0,0-26.077.308l-.651.936Z" transform="translate(-83.35 0)" fill="#18242a" />
+                                    <rect id="Rectangle_1029" data-name="Rectangle 1029" width="16.547" height="3.785" transform="translate(0 27.712) rotate(-89.92)" fill="#18242a" />
+                                    <path id="Path_12945" data-name="Path 12945" d="M21.6,31.687l-.012,7.256H18.043l.012-6.745A1.955,1.955,0,0,0,16,30.042c-1.3,0-2.2.756-2.2,2.43l-.012,6.454H10.24L10.257,27.1H13.8v1.116a4.051,4.051,0,0,1,3.384-1.436c2.39,0,4.419,1.709,4.413,4.9" transform="translate(-4.289 -11.209)" fill="#18242a" />
+                                    <path id="Path_12946" data-name="Path 12946" d="M41.586,35.427c0,2.721-2.366,3.872-4.925,3.872-2.366,0-4.157-.907-5.082-2.82l3.076-1.744a1.935,1.935,0,0,0,2.006,1.4c.849,0,1.279-.256,1.279-.733,0-1.3-5.814-.622-5.808-4.715,0-2.576,2.18-3.872,4.64-3.872a5.162,5.162,0,0,1,4.6,2.535l-3.029,1.628a1.713,1.713,0,0,0-1.581-1.041c-.616,0-.994.233-.994.663,0,1.349,5.814.459,5.808,4.832" transform="translate(-13.221 -11.222)" fill="#18242a" />
+                                    <path id="Path_12947" data-name="Path 12947" d="M61.981,27.417l-.017,11.82H58.417V38.121a4.034,4.034,0,0,1-3.384,1.436c-2.39,0-4.419-1.709-4.413-4.9l.012-7.256h3.547l-.012,6.745A1.955,1.955,0,0,0,56.219,36.3c1.3,0,2.2-.756,2.2-2.43l.012-6.454Z" transform="translate(-21.191 -11.469)" fill="#18242a" />
+                                    <path id="Path_12948" data-name="Path 12948" d="M80.771,27.04v4.018c-1.471-.238-3.552.349-3.558,2.692v5.343H73.66l.017-11.82h3.547v2.111a3.558,3.558,0,0,1,3.552-2.337" transform="translate(-30.835 -11.318)" fill="#18242a" />
+                                    <path id="Path_12949" data-name="Path 12949" d="M95.329,33.14a2.812,2.812,0,1,0-5.622-.012,2.815,2.815,0,1,0,5.628.012m3.552-5.907-.017,11.82H95.323V37.937A4.432,4.432,0,0,1,91.8,39.373c-3.1,0-5.646-2.727-5.64-6.25s2.564-6.239,5.657-6.233a4.438,4.438,0,0,1,3.523,1.448V27.227h3.547Z" transform="translate(-36.067 -11.255)" fill="#18242a" />
+                                    <path id="Path_12950" data-name="Path 12950" d="M122.9,31.827l-.012,7.256h-3.547l.012-6.745a1.955,1.955,0,0,0-2.052-2.157c-1.3,0-2.2.756-2.2,2.43l-.012,6.454H111.54l.017-11.826H115.1v1.116a4.051,4.051,0,0,1,3.384-1.436c2.39,0,4.419,1.709,4.413,4.9" transform="translate(-46.691 -11.268)" fill="#18242a" />
+                                    <path id="Path_12951" data-name="Path 12951" d="M133.3,33.2a6.251,6.251,0,0,1,11.611-3.2l-3.1,1.791a2.437,2.437,0,0,0-2.291-1.326,2.742,2.742,0,0,0-.006,5.483,2.428,2.428,0,0,0,2.3-1.32l3.093,1.779a6.025,6.025,0,0,1-5.349,3.041A6.12,6.12,0,0,1,133.3,33.2" transform="translate(-55.799 -11.289)" fill="#18242a" />
+                                    <path id="Path_12952" data-name="Path 12952" d="M162.114,32.016a2.665,2.665,0,0,0-5.087-.006h5.082Zm-2.18,4.308a3.109,3.109,0,0,0,2.273-.9l2.832,1.634a6.016,6.016,0,0,1-5.157,2.43c-4.041-.006-6.547-2.727-6.541-6.25a6.058,6.058,0,0,1,6.3-6.233,5.963,5.963,0,0,1,5.994,6.25,6.594,6.594,0,0,1-.145,1.419l-8.39-.012a2.682,2.682,0,0,0,2.832,1.657" transform="translate(-64.187 -11.306)" fill="#18242a" />
+                                    <g id="Group_2752" data-name="Group 2752" transform="translate(102.095 10.605)">
+                                        <path id="Path_12953" data-name="Path 12953" d="M186.13,35.265a4.18,4.18,0,0,1-3.785,2.169,4.5,4.5,0,0,1,.012-9,3.93,3.93,0,0,1,3.692,2.151l.25.541,1.9-1.111-.2-.442a6.029,6.029,0,0,0-5.634-3.343,6.707,6.707,0,1,0-.017,13.413,6.351,6.351,0,0,0,5.727-3.285l.233-.448-1.913-1.14-.267.494Z" transform="translate(-175.6 -21.584)" fill="#18242a" />
+                                        <rect id="Rectangle_1030" data-name="Rectangle 1030" width="16.518" height="2.256" transform="translate(13.501 17.807) rotate(-89.92)" fill="#18242a" />
+                                        <path id="Path_12954" data-name="Path 12954" d="M211.582,26.27a6.707,6.707,0,1,0,6.721,6.715A6.663,6.663,0,0,0,211.582,26.27Zm4.442,6.715a4.465,4.465,0,1,1-4.448-4.506A4.428,4.428,0,0,1,216.024,32.985Z" transform="translate(-187.831 -21.601)" fill="#18242a" />
+                                        <path id="Path_12955" data-name="Path 12955" d="M238.39,33.531c0,2.611-1.355,4.169-3.6,4.163a2.732,2.732,0,0,1-2.936-3.064l.012-7.89h-2.279l-.012,7.884c0,3.2,2.006,5.268,5.117,5.274a5.087,5.087,0,0,0,3.7-1.4v1.14h2.25l.017-12.9H238.4l-.012,6.774Z" transform="translate(-198.191 -21.798)" fill="#18242a" />
+                                        <path id="Path_12956" data-name="Path 12956" d="M261.461,18.246l-.012,6.343a6.149,6.149,0,0,0-4.541-1.884,6.707,6.707,0,0,0-.017,13.413,6.144,6.144,0,0,0,4.547-1.872v1.616h2.25l.023-17.623h-2.256Zm-4.5,15.664a4.5,4.5,0,1,1,4.483-4.494A4.44,4.44,0,0,1,256.961,33.909Z" transform="translate(-206.843 -18.24)" fill="#18242a" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- End logo -->
+
+                    <!-- toggle button -->
+                    <div class="d-flex align-items-center d-lg-none">
+                        <div class="position-relative">
+                            <button :class="{'hide':searchBtnOpen}" @click="searchBtnOpen = true" class="search-icon border-0 bg-transparent p-0 me-4 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                    <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                        <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                        <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <div style="right: -36px;" class="search-btn-modal position-absolute top-50 translate-middle-y">
+                                <div x-show="searchBtnOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 invisible" x-transition:enter-end="opacity-100 visible" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 visible" x-transition:leave-end="opacity-0 invisible" class="search-collapse">
+                                    <div class="d-flex align-items-center">
+                                        <div class="position-relative">
+                                            <a @click="searchBtnOpen = false" href="javascript:void(0)" class="search-close-btn align--center bg-black rounded-circle position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10.035" height="10.035" viewBox="0 0 10.035 10.035">
+                                                    <g id="Group_138" data-name="Group 138" transform="translate(0 0)">
+                                                        <rect id="Rectangle_132" data-name="Rectangle 132" width="12.84" height="1.352" transform="translate(0 9.08) rotate(-45)" fill="#fdfaf6" />
+                                                        <rect id="Rectangle_133" data-name="Rectangle 133" width="12.84" height="1.351" transform="translate(9.08 10.035) rotate(-135)" fill="#fdfaf6" />
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <form action="search.html">
+                                                <input type="text" class="border border--dark text--black border--radius lh-1 bg--light" placeholder="Search...">
+                                                <button class="border-0 p-0 bg-transparent position-absolute end-0 top-50 translate-middle-y me-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                                        <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                                            <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                                            <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <div class="form-select-option position-absolute start-0 bg--light border border--dark border-top-0 w-100">
+                                                    <ul class="mb-0 ps-0 pb-5">
+                                                        <li class="l0h-1">Taxi Insurance</li>
+                                                        <li class="lh-010
+                                                        ">Road Tax</li>
+                                                        <li class="lh-1">Taxi Industry</li>
+                                                        <li class="lh-1">Do You Need Taxi Insurance</li>
+                                                    </ul>
+                                                    <div class="text-center lh-1">
+                                                        <a href="javascript:void(0);" class="text--black fw-medium text-decoration-underline">View All Results</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a :class="{'hide':searchBtnOpen}" href="javascript:void(0);" class="border-0 p-0 navbar-toggler scroll-none transition" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 30 22">
+                                <g id="Group_3123" data-name="Group 3123" transform="translate(-322.41 -49)">
+                                    <line id="Line_677" data-name="Line 677" x2="28" transform="translate(323.41 50)" fill="none" stroke="#18242a" stroke-linecap="round" stroke-width="2" />
+                                    <line id="Line_678" data-name="Line 678" x2="28" transform="translate(323.41 60)" fill="none" stroke="#18242a" stroke-linecap="round" stroke-width="2" />
+                                    <line id="Line_679" data-name="Line 679" x2="28" transform="translate(323.41 70)" fill="none" stroke="#18242a" stroke-linecap="round" stroke-width="2" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- End toggle button -->
+                </div>
+                <div class="col-12 col-lg-9">
+
+                    <div id="navbarHeader" class="collapse d-lg-flex justify-content-between align-items-center ms-auto col-12 col-xxl-11">
+
+                        <!-- Mobile menu open logo -->
+                        <div class="d-lg-none border-bottom border--dark w-100">
+                            <div class="mob-container mob-container-header d-flex justify-content-between align-items-center py-sm-3">
+                                <a :class="{'hide':searchBtnOpen}" href="index.html" class="logo navbar-brand p-0 me-0 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="d-none d-sm-block" width="208.213" height="37.59" viewBox="0 0 208.213 37.59">
+                                        <g id="Layer_1-2" transform="translate(-0.005 0)">
+                                            <g id="Group_2753" data-name="Group 2753" transform="translate(0.005 0)">
+                                                <path id="Path_12944" data-name="Path 12944" d="M218.452,13.043l-1.173-.929a12.511,12.511,0,0,0-7.835-2.733,12.675,12.675,0,0,0-8.451,3.221l-1.873-2.094a15.416,15.416,0,0,1,10.324-3.936,15.209,15.209,0,0,1,8.4,2.5A23.822,23.822,0,0,1,236.557,0a24.209,24.209,0,0,1,19.172,9.753l-2.269,1.66a20.96,20.96,0,0,0-34.148.4l-.853,1.226Z" transform="translate(-47.516 0)" fill="#18242a" />
+                                                <rect id="Rectangle_1029" data-name="Rectangle 1029" width="21.669" height="4.957" transform="translate(0 36.289) rotate(-89.92)" fill="#18242a" />
+                                                <path id="Path_12945" data-name="Path 12945" d="M25.118,33.206l-.015,9.5H20.458l.015-8.832a2.56,2.56,0,0,0-2.688-2.825c-1.706,0-2.878.99-2.886,3.183l-.015,8.451H10.24L10.263,27.2h4.644v1.462a5.3,5.3,0,0,1,4.431-1.881c3.129,0,5.787,2.238,5.779,6.418" transform="translate(-2.447 -6.39)" fill="#18242a" />
+                                                <path id="Path_12946" data-name="Path 12946" d="M44.683,38.094c0,3.563-3.1,5.071-6.449,5.071-3.1,0-5.444-1.188-6.655-3.693l4.028-2.284a2.534,2.534,0,0,0,2.627,1.827c1.112,0,1.675-.335,1.675-.959,0-1.706-7.614-.815-7.606-6.175,0-3.373,2.855-5.071,6.076-5.071a6.76,6.76,0,0,1,6.03,3.32l-3.967,2.132A2.243,2.243,0,0,0,38.372,30.9c-.807,0-1.3.3-1.3.868,0,1.766,7.614.6,7.606,6.327" transform="translate(-7.539 -6.397)" fill="#18242a" />
+                                                <path id="Path_12947" data-name="Path 12947" d="M65.5,27.423,65.475,42.9H60.83V41.44A5.283,5.283,0,0,1,56.4,43.321c-3.129,0-5.787-2.238-5.779-6.418l.015-9.5H55.28l-.015,8.832a2.56,2.56,0,0,0,2.688,2.825c1.706,0,2.878-.99,2.886-3.183l.015-8.451H65.5Z" transform="translate(-12.082 -6.538)" fill="#18242a" />
+                                                <path id="Path_12948" data-name="Path 12948" d="M82.972,27.04V32.3c-1.926-.312-4.652.457-4.66,3.525v7H73.66l.023-15.479h4.644v2.764a4.659,4.659,0,0,1,4.652-3.061" transform="translate(-17.58 -6.452)" fill="#18242a" />
+                                                <path id="Path_12949" data-name="Path 12949" d="M98.167,35.075A3.683,3.683,0,1,0,90.8,35.06a3.686,3.686,0,1,0,7.37.015m4.652-7.736L102.8,42.818H98.159V41.356a5.8,5.8,0,0,1-4.614,1.881c-4.058,0-7.393-3.571-7.385-8.185s3.358-8.17,7.408-8.162a5.812,5.812,0,0,1,4.614,1.9V27.332h4.644Z" transform="translate(-20.562 -6.416)" fill="#18242a" />
+                                                <path id="Path_12950" data-name="Path 12950" d="M126.418,33.346l-.015,9.5h-4.644l.015-8.832a2.56,2.56,0,0,0-2.688-2.825c-1.706,0-2.878.99-2.886,3.183l-.015,8.451H111.54l.023-15.487h4.644V28.8a5.3,5.3,0,0,1,4.431-1.881c3.129,0,5.787,2.238,5.779,6.418" transform="translate(-26.618 -6.423)" fill="#18242a" />
+                                                <path id="Path_12951" data-name="Path 12951" d="M133.3,35.132a8.186,8.186,0,0,1,15.2-4.188l-4.058,2.345a3.192,3.192,0,0,0-3-1.736,3.405,3.405,0,0,0-3.5,3.586,3.4,3.4,0,0,0,3.495,3.594,3.179,3.179,0,0,0,3.007-1.728l4.051,2.33a7.89,7.89,0,0,1-7,3.982,8.015,8.015,0,0,1-8.193-8.185" transform="translate(-31.811 -6.435)" fill="#18242a" />
+                                                <path id="Path_12952" data-name="Path 12952" d="M164.829,33.566a3.49,3.49,0,0,0-6.662-.008h6.655Zm-2.855,5.642a4.071,4.071,0,0,0,2.977-1.173l3.708,2.139a7.878,7.878,0,0,1-6.753,3.183c-5.292-.008-8.573-3.571-8.566-8.185a7.934,7.934,0,0,1,8.246-8.162,7.809,7.809,0,0,1,7.85,8.185,8.635,8.635,0,0,1-.19,1.858l-10.987-.015c.586,1.614,2.01,2.17,3.708,2.17" transform="translate(-36.592 -6.445)" fill="#18242a" />
+                                                <g id="Group_2752" data-name="Group 2752" transform="translate(133.696 13.888)">
+                                                    <path id="Path_12953" data-name="Path 12953" d="M189.389,38.062a5.474,5.474,0,0,1-4.957,2.84,5.893,5.893,0,0,1,.015-11.786,5.146,5.146,0,0,1,4.835,2.817l.327.708,2.49-1.454-.266-.579a7.9,7.9,0,0,0-7.378-4.378,8.783,8.783,0,1,0-.023,17.565,8.317,8.317,0,0,0,7.5-4.3l.3-.586-2.5-1.492-.35.647Z" transform="translate(-175.6 -20.147)" fill="#18242a" />
+                                                    <rect id="Rectangle_1030" data-name="Rectangle 1030" width="21.631" height="2.954" transform="translate(17.68 23.318) rotate(-89.92)" fill="#18242a" />
+                                                    <path id="Path_12954" data-name="Path 12954" d="M213.675,26.27a8.783,8.783,0,1,0,8.8,8.794A8.725,8.725,0,0,0,213.675,26.27Zm5.817,8.794a5.848,5.848,0,1,1-5.825-5.9A5.8,5.8,0,0,1,219.492,35.064Z" transform="translate(-182.572 -20.156)" fill="#18242a" />
+                                                    <path id="Path_12955" data-name="Path 12955" d="M241.12,35.633c0,3.419-1.774,5.459-4.721,5.452-2.444,0-3.845-1.462-3.845-4.013l.015-10.332h-2.985l-.015,10.324c0,4.188,2.627,6.9,6.7,6.906a6.661,6.661,0,0,0,4.842-1.827v1.492h2.947l.023-16.888h-2.954l-.015,8.87Z" transform="translate(-188.478 -20.268)" fill="#18242a" />
+                                                    <path id="Path_12956" data-name="Path 12956" d="M264.935,18.248l-.015,8.307a8.052,8.052,0,0,0-5.946-2.467,8.783,8.783,0,0,0-.023,17.565A8.045,8.045,0,0,0,264.9,39.2v2.117h2.947l.03-23.078h-2.954Zm-5.893,20.512a5.893,5.893,0,1,1,5.87-5.886A5.815,5.815,0,0,1,259.042,38.759Z" transform="translate(-193.41 -18.24)" fill="#18242a" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="d-sm-none" width="158.999" height="28.705" viewBox="0 0 158.999 28.705">
+                                        <g id="Layer_1-2" transform="translate(-0.005 0)">
+                                            <g id="Group_2753" data-name="Group 2753" transform="translate(0.005 0)">
+                                                <path id="Path_12944" data-name="Path 12944" d="M213.882,9.96l-.9-.709A9.554,9.554,0,0,0,207,7.163a9.679,9.679,0,0,0-6.454,2.459l-1.43-1.6A11.772,11.772,0,0,1,207,5.018a11.614,11.614,0,0,1,6.413,1.907A18.191,18.191,0,0,1,227.709,0a18.487,18.487,0,0,1,14.64,7.448l-1.733,1.268a16.006,16.006,0,0,0-26.077.308l-.651.936Z" transform="translate(-83.35 0)" fill="#18242a" />
+                                                <rect id="Rectangle_1029" data-name="Rectangle 1029" width="16.547" height="3.785" transform="translate(0 27.712) rotate(-89.92)" fill="#18242a" />
+                                                <path id="Path_12945" data-name="Path 12945" d="M21.6,31.687l-.012,7.256H18.043l.012-6.745A1.955,1.955,0,0,0,16,30.042c-1.3,0-2.2.756-2.2,2.43l-.012,6.454H10.24L10.257,27.1H13.8v1.116a4.051,4.051,0,0,1,3.384-1.436c2.39,0,4.419,1.709,4.413,4.9" transform="translate(-4.289 -11.209)" fill="#18242a" />
+                                                <path id="Path_12946" data-name="Path 12946" d="M41.586,35.427c0,2.721-2.366,3.872-4.925,3.872-2.366,0-4.157-.907-5.082-2.82l3.076-1.744a1.935,1.935,0,0,0,2.006,1.4c.849,0,1.279-.256,1.279-.733,0-1.3-5.814-.622-5.808-4.715,0-2.576,2.18-3.872,4.64-3.872a5.162,5.162,0,0,1,4.6,2.535l-3.029,1.628a1.713,1.713,0,0,0-1.581-1.041c-.616,0-.994.233-.994.663,0,1.349,5.814.459,5.808,4.832" transform="translate(-13.221 -11.222)" fill="#18242a" />
+                                                <path id="Path_12947" data-name="Path 12947" d="M61.981,27.417l-.017,11.82H58.417V38.121a4.034,4.034,0,0,1-3.384,1.436c-2.39,0-4.419-1.709-4.413-4.9l.012-7.256h3.547l-.012,6.745A1.955,1.955,0,0,0,56.219,36.3c1.3,0,2.2-.756,2.2-2.43l.012-6.454Z" transform="translate(-21.191 -11.469)" fill="#18242a" />
+                                                <path id="Path_12948" data-name="Path 12948" d="M80.771,27.04v4.018c-1.471-.238-3.552.349-3.558,2.692v5.343H73.66l.017-11.82h3.547v2.111a3.558,3.558,0,0,1,3.552-2.337" transform="translate(-30.835 -11.318)" fill="#18242a" />
+                                                <path id="Path_12949" data-name="Path 12949" d="M95.329,33.14a2.812,2.812,0,1,0-5.622-.012,2.815,2.815,0,1,0,5.628.012m3.552-5.907-.017,11.82H95.323V37.937A4.432,4.432,0,0,1,91.8,39.373c-3.1,0-5.646-2.727-5.64-6.25s2.564-6.239,5.657-6.233a4.438,4.438,0,0,1,3.523,1.448V27.227h3.547Z" transform="translate(-36.067 -11.255)" fill="#18242a" />
+                                                <path id="Path_12950" data-name="Path 12950" d="M122.9,31.827l-.012,7.256h-3.547l.012-6.745a1.955,1.955,0,0,0-2.052-2.157c-1.3,0-2.2.756-2.2,2.43l-.012,6.454H111.54l.017-11.826H115.1v1.116a4.051,4.051,0,0,1,3.384-1.436c2.39,0,4.419,1.709,4.413,4.9" transform="translate(-46.691 -11.268)" fill="#18242a" />
+                                                <path id="Path_12951" data-name="Path 12951" d="M133.3,33.2a6.251,6.251,0,0,1,11.611-3.2l-3.1,1.791a2.437,2.437,0,0,0-2.291-1.326,2.742,2.742,0,0,0-.006,5.483,2.428,2.428,0,0,0,2.3-1.32l3.093,1.779a6.025,6.025,0,0,1-5.349,3.041A6.12,6.12,0,0,1,133.3,33.2" transform="translate(-55.799 -11.289)" fill="#18242a" />
+                                                <path id="Path_12952" data-name="Path 12952" d="M162.114,32.016a2.665,2.665,0,0,0-5.087-.006h5.082Zm-2.18,4.308a3.109,3.109,0,0,0,2.273-.9l2.832,1.634a6.016,6.016,0,0,1-5.157,2.43c-4.041-.006-6.547-2.727-6.541-6.25a6.058,6.058,0,0,1,6.3-6.233,5.963,5.963,0,0,1,5.994,6.25,6.594,6.594,0,0,1-.145,1.419l-8.39-.012a2.682,2.682,0,0,0,2.832,1.657" transform="translate(-64.187 -11.306)" fill="#18242a" />
+                                                <g id="Group_2752" data-name="Group 2752" transform="translate(102.095 10.605)">
+                                                    <path id="Path_12953" data-name="Path 12953" d="M186.13,35.265a4.18,4.18,0,0,1-3.785,2.169,4.5,4.5,0,0,1,.012-9,3.93,3.93,0,0,1,3.692,2.151l.25.541,1.9-1.111-.2-.442a6.029,6.029,0,0,0-5.634-3.343,6.707,6.707,0,1,0-.017,13.413,6.351,6.351,0,0,0,5.727-3.285l.233-.448-1.913-1.14-.267.494Z" transform="translate(-175.6 -21.584)" fill="#18242a" />
+                                                    <rect id="Rectangle_1030" data-name="Rectangle 1030" width="16.518" height="2.256" transform="translate(13.501 17.807) rotate(-89.92)" fill="#18242a" />
+                                                    <path id="Path_12954" data-name="Path 12954" d="M211.582,26.27a6.707,6.707,0,1,0,6.721,6.715A6.663,6.663,0,0,0,211.582,26.27Zm4.442,6.715a4.465,4.465,0,1,1-4.448-4.506A4.428,4.428,0,0,1,216.024,32.985Z" transform="translate(-187.831 -21.601)" fill="#18242a" />
+                                                    <path id="Path_12955" data-name="Path 12955" d="M238.39,33.531c0,2.611-1.355,4.169-3.6,4.163a2.732,2.732,0,0,1-2.936-3.064l.012-7.89h-2.279l-.012,7.884c0,3.2,2.006,5.268,5.117,5.274a5.087,5.087,0,0,0,3.7-1.4v1.14h2.25l.017-12.9H238.4l-.012,6.774Z" transform="translate(-198.191 -21.798)" fill="#18242a" />
+                                                    <path id="Path_12956" data-name="Path 12956" d="M261.461,18.246l-.012,6.343a6.149,6.149,0,0,0-4.541-1.884,6.707,6.707,0,0,0-.017,13.413,6.144,6.144,0,0,0,4.547-1.872v1.616h2.25l.023-17.623h-2.256Zm-4.5,15.664a4.5,4.5,0,1,1,4.483-4.494A4.44,4.44,0,0,1,256.961,33.909Z" transform="translate(-206.843 -18.24)" fill="#18242a" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="position-relative">
+                                        <button :class="{'hide':searchBtnOpen}" @click="searchBtnOpen = true" class="search-icon search-btn d-inline-block border-0 bg-transparent p-0 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                                <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                                    <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                                    <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <div style="right: -28px;" class="position-absolute top-50 translate-middle-y">
+                                            <div x-show="searchBtnOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 invisible" x-transition:enter-end="opacity-100 visible" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 visible" x-transition:leave-end="opacity-0 invisible" class="search-collapse search-btn-modal">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="position-relative">
+                                                        <a @click="searchBtnOpen = false" href="javascript:void(0)" class="search-close-btn align--center bg-black rounded-circle position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.035" height="10.035" viewBox="0 0 10.035 10.035">
+                                                                <g id="Group_138" data-name="Group 138" transform="translate(0 0)">
+                                                                    <rect id="Rectangle_132" data-name="Rectangle 132" width="12.84" height="1.352" transform="translate(0 9.08) rotate(-45)" fill="#fdfaf6" />
+                                                                    <rect id="Rectangle_133" data-name="Rectangle 133" width="12.84" height="1.351" transform="translate(9.08 10.035) rotate(-135)" fill="#fdfaf6" />
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <form action="search.html">
+                                                            <input type="text" class="border border--dark text--black border--radius lh-1 bg--light" placeholder="Search...">
+                                                            <button class="border-0 p-0 bg-transparent position-absolute end-0 top-50 translate-middle-y me-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                                                    <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                                                        <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                                                        <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="form-select-option position-absolute start-0 bg--light border border--dark border-top-0 w-100">
+                                                                <ul class="mb-0 ps-0 pb-5">
+                                                                    <li class="l0h-1">Taxi Insurance</li>
+                                                                    <li class="lh-010">Road Tax</li>
+                                                                    <li class="lh-1">Taxi Industry</li>
+                                                                    <li class="lh-1">Do You Need Taxi Insurance</li>
+                                                                </ul>
+                                                                <div class="text-center lh-1">
+                                                                    <a href="javascript:void(0);" class="text--black fw-medium text-decoration-underline">View All Results</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a :class="{'hide':searchBtnOpen}" @click="megaMenuOpen = false" href="javascript:void(0);" class="close-btn border-0 p-0 navbar-toggler transition" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.5" height="20.18" viewBox="0 0 23.328 23.009">
+                                            <line id="Line_680" data-name="Line 680" x2="20.5" y2="20.181" transform="translate(1.414 1.414)" fill="none" stroke="#18242a" stroke-linecap="round" stroke-width="2" />
+                                            <line id="Line_679" data-name="Line 679" y1="20.181" x2="20.5" transform="translate(1.414 1.414)" fill="none" stroke="#18242a" stroke-linecap="round" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Mobile menu open logo -->
+
+                        <!-- Menu list -->
+                        <div :class="{'hide':searchBtnOpen}" class="mob-container menu transition">
+                            <ul class="d-flex flex-wrap flex-column flex-lg-row p-0 m-0 justify-content-lg-end">
+                                <li :class="{'open' : megaMenuOpen}" class="mega-menu">
+                                    <a @click="megaMenuOpen = ! megaMenuOpen" href="javascript:void(0);" class="fw-medium hover-underline text--black d-flex align-items-center">Insurance
+                                        <div class="align--center border border--dark rounded-circle transition ms-3 ms-lg-1">
+                                            <span class="text-center">+</span>
+                                        </div>
+                                    </a>
+                                    <div x-show="megaMenuOpen" x-collapse.duration.500ms class="mega-menu-content position-fixed start-0 w-100 border-bottom border--dark">
+                                        <div class="container">
+                                            <div class="menu-collapse d-lg-flex">
+                                                <ul>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">Taxi</a></li>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">Caravan</a></li>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">SORN</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">GAP</a></li>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">Car</a></li>
+                                                    <li><a href="javascript:void(0);" class="text--black fw-medium lh-1">Bicycle</a></li>
+
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="motorhome.html" class="text--black fw-medium lh-1">Motorhome</a></li>
+                                                    <li class="pb-0"><a href="javascript:void(0);" class="text--black fw-medium lh-1">Motorcycle</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="articles.html" class="fw-medium hover-underline text--black">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="guides.html" class="fw-medium hover-underline text--black">Guides</a>
+                                </li>
+                                <li class="d-none d-lg-inline-block">
+                                    <a href="awards.html" class="fw-medium hover-underline text--black">Rewards</a>
+                                </li>
+                                <li>
+                                    <a href="about_us.html" class="fw-medium hover-underline text--black">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END Menu list -->
+
+                        <!-- button group -->
+                        <div class="mob-container">
+                            <div class="button-group d-flex flex-column flex-lg-row align-items-center w-100">
+                                <a :class="{'hide':searchBtnOpen}" href="contact.html" class="contact-btn btn transition me-lg-2">Contact Us</a>
+                                <a :class="{'hide':searchBtnOpen}" href="javascript:void(0);" class="login-btn btn transition btn-transparent mx-lg-1">Login</a>
+                                <div class="position-relative d-none d-lg-inline-block">
+                                    <button :class="{'hide':searchBtnOpen}" @click="searchBtnOpen = true" class="transition search-icon search-btn border-0 bg-transparent p-0 ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                            <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                                <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                                <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div style="right: -16px;" class="search-btn-modal lg-block position-absolute top-50 translate-middle-y">
+                                        <div x-show="searchBtnOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 invisible" x-transition:enter-end="opacity-100 visible" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 visible" x-transition:leave-end="opacity-0 invisible" class="search-collapse">
+                                            <div class="d-flex align-items-center">
+                                                <a @click="searchBtnOpen = false" href="javascript:void(0)" class="search-close-btn align--center bg-black rounded-circle me-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.035" height="10.035" viewBox="0 0 10.035 10.035">
+                                                        <g id="Group_138" data-name="Group 138" transform="translate(0 0)">
+                                                            <rect id="Rectangle_132" data-name="Rectangle 132" width="12.84" height="1.352" transform="translate(0 9.08) rotate(-45)" fill="#fdfaf6" />
+                                                            <rect id="Rectangle_133" data-name="Rectangle 133" width="12.84" height="1.351" transform="translate(9.08 10.035) rotate(-135)" fill="#fdfaf6" />
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <div class="position-relative">
+                                                    <form action="search.html">
+                                                        <input type="text" class="border border--dark text--black border--radius lh-1 bg--light" placeholder="Search...">
+                                                        <button class="border-0 p-0 bg-transparent position-absolute end-0 top-50 translate-middle-y me-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.132" height="25.103" viewBox="0 0 25.132 25.103">
+                                                                <g id="Group_3006" data-name="Group 3006" transform="translate(19506.723 8887.965)">
+                                                                    <path id="Path_13284" data-name="Path 13284" d="M236.211,164c-.834-.852-1.81-1.551-2.708-2.33-1.661-1.442-3.041-3.122-4.776-4.484,2.685-3.593,1.771-8.073-1.276-11.419-4.105-4.507-9.354-2.621-12.741,1.5-3.309,3.782-2.451,8.627,1.114,11.929,2.717,2.518,7.022,2.257,10.152.434l.006.007c1.768,1.8,3.4,3.729,5.224,5.479,1.113,1.067,3.3,3.45,5.1,2.862,2.26-.739,1.007-2.859-.09-3.98ZM217.2,158.462c-3.479-2.44-4.6-7.252-1.72-10.548,3.007-3.659,6.759-4.734,10.557-1.517,3.064,2.594,4.317,7.269,1.643,10.543a8.126,8.126,0,0,1-10.48,1.523Zm18.044,8.022c-3.234-1.56-5.625-5.1-8.08-7.677.214-.172.417-.351.612-.54,2.058,1.6,3.7,3.62,5.716,5.262a24.672,24.672,0,0,1,2.07,1.852c.795.813,1,1.738-.318,1.1Z" transform="translate(-19719.256 -9031.018)" fill="#1b2429" stroke="#1b2429" stroke-width="0.2" />
+                                                                    <path id="Path_13285" data-name="Path 13285" d="M288.512,177.476a5.739,5.739,0,0,0-6.92-4.5c-.524.131-.812,1.216-.09,1.036A5.055,5.055,0,0,1,287.518,178c.156.66,1.116-.009.995-.524Z" transform="translate(-19780.934 -9058.418)" fill="#1b2429" />
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="form-select-option position-absolute start-0 bg--light border border--dark border-top-0 w-100">
+                                                            <ul class="ps-0 pb-5 mb-1">
+                                                                <li class="lh-1">Taxi Insurance</li>
+                                                                <li class="lh-1">Road Tax</li>
+                                                                <li class="lh-1">Taxi Industry</li>
+                                                                <li class="lh-1">Do You Need Taxi Insurance</li>
+                                                            </ul>
+                                                            <div class="text-center lh-1">
+                                                                <a href="javascript:void(0);" class="text--black fw-medium text-decoration-underline">View All Results</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button group -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End menu -->
+        <div class="menu-bg-overlay"></div>
+    </header>
+    <!-- End header -->
+
+    <!-- guides detail section -->
+    <section class="article-detail-section guides-detail-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xxl-3 pe-xxl-5">
+                    <aside class="h-100 pe-lg-3 pe-xl-5 pe-xxl-1">
+                        <div class="position-sticky">
+                            <div class="d-inline-block">
+                                <a href="guides.html" class="btn-with-icon article-detail-btn-with-icon d-flex align-items-center">
+                                    <div class="btn-icon transition">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8.639" height="14.162" viewBox="0 0 8.639 14.162">
+                                            <path id="Path_13296" data-name="Path 13296" d="M7.081,8.639,0,1.558,1.558,0,7.081,5.523,12.6,0l1.558,1.558Z" transform="translate(8.639) rotate(90)" fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                    <h5 class="bodyS  lh-1 mb-0 pe-0 ps-2">Articles</h5>
+                                </a>
+                            </div>
+                            <div id="listGroup" class="link-data d-flex flex-row flex-lg-column flex-nowrap justify-content-start overflow-x-auto scroll-xy-none border-bottom pe-4 pe-xxl-3">
+                                <a href="#aboutSorn" class="link flex-shrink-0 flex-shrink-lg-1 fw-medium active">What is a SORN?</a>
+                                <a href="#sornInsurance" class="link flex-shrink-0 flex-shrink-lg-1 fw-medium">Fire, Theft & Accidental Damage SORN Insurance: 2</a>
+                                <a href="#needSornInsurance" class="link flex-shrink-0 flex-shrink-lg-1 fw-medium">Do you need SORN insurance?</a>
+                                <a href="#needSornInsurance2" class="link flex-shrink-0 flex-shrink-lg-1 fw-medium">Do you need SORN insurance?</a>
+                            </div>
+                            <div class="btn-data d-none d-lg-block">
+                                <h3 class="bodyM lh-1 mb-3 pb-1">Sound like something you need?</h3>
+                                <a href="javascript:void(0);" class="btn">Retrieve quote</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div data-bs-spy="scroll" data-bs-target="#listGroup" class="col-12 col-lg-8 pe-xxl-0">
+                    <div class="article-detail-content ps-xxl-4">
+                        <div id="aboutSorn">
+                            <div class="article-detail-heading pe-xxl-1 pb-sm-3 mb-sm-4">
+                                <h1 class="mb-sm-5">SORN insurance - What is it and do you need it?</h1>
+                                <p class="fw-medium mb-0">SORN insurance, sometimes known as laid up insurance, covers vehicles that are declared with a Statutory Off Road Notification.</p>
+                            </div>
+                            <div class="article-detail-img overflow-hidden border--radius mb-5 mb-sm-4">
+                                <img src="assets/images/section/featured-img-1.png" class="object-cover" alt="image">
+                            </div>
+                            <div class="sub-section sub-section-1 mt-3 my-sm-0 pb-3 pb-sm-0 pt-3">
+                                <a href="javascript:void(0);" class="btn rounded-pill">Section 1</a>
+                                <div class="sub-section-body mt-1 mt-sm-4 pt-3">
+                                    <h2>What is a SORN?</h2>
+                                    <p class="bodyL mb-0 mb-sm-4">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdiet ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                    <div class="d-none d-sm-block pt-2">
+                                        <p class="bodyL mb-0">Pellentesque condimentum maximus risus laoreet dapibus. Nullam sollicitudin pharetra dolor, a viverra turpis facilisis at. Donec vitae dignissim ligula. Nullam eros neque, ornare pretium vestibulum sit amet, tristique eu nisi. Nam aliquet odio eget pellentesque imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis nisl quis ligula sodales tempor a in neque. Donec sodales porta justo, euismod vehicula felis auctor in. Integer fringilla est ac vitae enim euismod justo rhoncus eleifend sed non nibh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sornInsurance" class="sub-section sub-section-2 mt-5 pt-3">
+                            <a href="javascript:void(0);" class="btn rounded-pill">Section 2</a>
+                            <div class="sub-section-body mt-4 pt-sm-3">
+                                <h2>Fire, Theft & Accidental Damage SORN Insurance:</h2>
+                                <p class="bodyL mb-4 pb-3">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdiet ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                <ul class="mb-0 d-none d-sm-block">
+                                    <li class="mb-4 mb-sm-3">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex</li>
+                                    <li class="mb-4 mb-sm-3">Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at</li>
+                                    <li>Morbi dapibus ac urna at fringilla. Aliquam imperdiet ligula non luctus</li>
+                                </ul>
+                                <ul class="mb-0 d-sm-none">
+                                    <li class="mb-3">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat</li>
+                                    <li class="mb-3">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat</li>
+                                    <li>Fusce non risus tortor. Aliquam erat volutpat. Donec consequat</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="needSornInsurance" class="sub-section sub-section-3 mt-sm-5 pt-sm-2">
+                            <a href="javascript:void(0);" class="btn rounded-pill">Section 3</a>
+                            <div class="sub-section-body mt-4 pt-sm-3">
+                                <h2 class="d-none d-sm-block">Do you need SORN insurance?</h2>
+                                <h2 class="d-sm-none mb-4">What is a SORN?</h2>
+                                <div class="d-none d-md-block">
+                                    <p class="bodyL">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdietPellentesque condimentum maximus risus laoreet dapibus. Nullam sollicitudin pharetra dolor, a viverra turpis facilisis at. Donec vitae dignissim ligula. Nullam eros neque, ornare pretium vestibulum sit amet, tristique eu nisi. Nam aliquet odio eget pellentesque imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis nisl quis ligula sodales tempor a in neque. Donec sodales porta justo, euismod vehicula felis auctor in. Integer fringilla est ac vitae enim euismod justo rhoncus eleifend sed non nibh. ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                </div>
+                                <p class="bodyL d-md-none">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdiet ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                <div class="btn-data mt-4 pt-2">
+                                    <a href="assets/images/section/featured-img-1.png" class="btn download-btn mb-3 mb-sm-0 me-sm-4" download>Button/download</a>
+                                    <a href="javascript:void(0);" class="btn btn-transparent share-btn">
+                                        <span class="me-1">Share this</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.193" height="12.193" viewBox="0 0 12.193 12.193">
+                                            <path id="Path_12201" data-name="Path 12201" d="M18.016,15.839a2.173,2.173,0,0,0-1.711.835L12.278,14.66a2.11,2.11,0,0,0,0-1.127L16.3,11.52a2.2,2.2,0,1,0-.39-.779l-4.027,2.014a2.177,2.177,0,1,0,0,2.685l4.027,2.014a2.176,2.176,0,1,0,2.1-1.614Z" transform="translate(-8 -8)" fill="currentColor" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="needSornInsurance2" class="sub-section sub-section-3 mt-sm-5 pt-sm-2">
+                            <a href="javascript:void(0);" class="btn rounded-pill">Section 4</a>
+                            <div class="sub-section-body mt-4 pt-sm-3">
+                                <h2 class="d-none d-sm-block">Do you need SORN insurance?</h2>
+                                <h2 class="d-sm-none mb-4">What is a SORN?</h2>
+                                <div class="d-none d-md-block">
+                                    <p class="bodyL">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdietPellentesque condimentum maximus risus laoreet dapibus. Nullam sollicitudin pharetra dolor, a viverra turpis facilisis at. Donec vitae dignissim ligula. Nullam eros neque, ornare pretium vestibulum sit amet, tristique eu nisi. Nam aliquet odio eget pellentesque imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis nisl quis ligula sodales tempor a in neque. Donec sodales porta justo, euismod vehicula felis auctor in. Integer fringilla est ac vitae enim euismod justo rhoncus eleifend sed non nibh. ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                </div>
+                                <p class="bodyL d-md-none">Fusce non risus tortor. Aliquam erat volutpat. Donec consequat finibus ex quis commodo. Quisque lacinia, ipsum eu interdum tincidunt, neque nunc egestas arcu, at semper neque leo non sem. Morbi dapibus ac urna at fringilla. Aliquam imperdiet ligula non luctus vulputate. Vestibulum eget consequat justo. Etiam placerat dictum augue, id tempor dolor sollicitudin ut. Fusce dapibus, dolor a convallis consequat, nibh orci fermentum ligula, sit amet varius mauris erat at sem.</p>
+                                <div class="btn-data mt-4 pt-2">
+                                    <a href="assets/images/section/featured-img-1.png" class="btn download-btn mb-3 mb-sm-0 me-sm-4" download>Button/download</a>
+                                    <a href="javascript:void(0);" class="btn btn-transparent share-btn">
+                                        <span class="me-1">Share this</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.193" height="12.193" viewBox="0 0 12.193 12.193">
+                                            <path id="Path_12201" data-name="Path 12201" d="M18.016,15.839a2.173,2.173,0,0,0-1.711.835L12.278,14.66a2.11,2.11,0,0,0,0-1.127L16.3,11.52a2.2,2.2,0,1,0-.39-.779l-4.027,2.014a2.177,2.177,0,1,0,0,2.685l4.027,2.014a2.176,2.176,0,1,0,2.1-1.614Z" transform="translate(-8 -8)" fill="currentColor" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- guides detail section -->
+
+    <!-- guides open newsletter section -->
+    <section class="articles-open-newsletter-section bg-black">
+        <div class="container">
+            <div class="articles-page-newsletter-data articles-open-newsletter-data text-center flex-wrap align--center justify-content-xxl-between border--radius px-sm-0 m-0">
+                <h2 class="text--light lh-1 mb-xxl-0 px-3">Sign up to our newsletter & stay up to date</h2>
+                <form class="articles-page-newsletter-input w-100">
+                    <div class="d-flex position-relative">
+                        <input type="email" class="text-input text--light bodyM w-100 fw-light border-0 lh-1 border--radius" placeholder="Enter email address…." />
+                        <button type="submit" class="align--center border-0 position-absolute top-50 end-0 translate-middle-y bg-black p-0 me-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13.921" height="15.166" viewBox="0 0 13.921 15.166">
+                                <path id="Path_13303" data-name="Path 13303" d="M7.257,3.1a2,2,0,0,1,3.486,0l5.58,9.921A2,2,0,0,1,14.58,16H3.42a2,2,0,0,1-1.743-2.981Z" transform="translate(16 -1.417) rotate(90)" fill="#fdfaf6" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- guides open newsletter section -->
+
+    <!-- articles section -->
+    <section class="articles-section articles-open-card-section guides-open-card-section overflow-hidden bg-secondary">
+        <div class="container">
+            <div class="articles-section-header articles-open-section-header guides-open-section-header d-flex align-items-center justify-content-between mb-4 mb-md-5 pb-1 pb-md-3">
+                <h2 class="section-large-title text--light mb-0 lh-1">Related Guides</h2>
+                <a href="javascript:void(0);" class="btn btn-text-white d-none d-md-inline-block">View all guides</a>
+            </div>
+            <div class="filter-tab-nav btn-data-overflow d-flex flex-nowrap justify-content-start overflow-x-auto scroll-xy-none d-md-none mb-4 mb-sm-3 pb-3">
+                <a href="javascript:void(0);" data-filter="all" class="filter-tab-btn btn fw-normal rounded-pill me-1 active">All</a>
+                <a href="javascript:void(0);" data-filter="general" class="filter-tab-btn btn fw-normal rounded-pill me-1">General</a>
+                <a href="javascript:void(0);" data-filter="motor" class="filter-tab-btn btn fw-normal rounded-pill me-1">Motor</a>
+                <a href="javascript:void(0);" data-filter="insurance" class="filter-tab-btn btn fw-normal rounded-pill me-1">Insurance</a>
+                <a href="javascript:void(0);" data-filter="sorn" class="filter-tab-btn btn fw-normal rounded-pill me-1">SORN</a>
+            </div>
+            <div class="articles-card-content articles-open-card-content pt-1 pt-sm-0">
+                <div class="row justify-content-start flex-nowrap overflow-x-auto scroll-xy-none">
+                    <div class="col-4 filter general">
+                        <a href="guides_open.html">
+                            <div class="card articles-card position-relative border--dark card-hover overflow-hidden">
+                                <div class="card-img">
+                                    <img src="assets/images/section/articles-img-1.png" class="object-cover" alt="image">
+                                </div>
+                                <div class="card-label position-absolute">
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-none d-sm-inline-block">General</div>
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-sm-none">Guide</div>
+                                </div>
+                                <div class="card-body bg--light">
+                                    <h5 class="card-title text-capitalize mb-3 col-12 col-xl-11 col-xxl-9">How to get cheaper motorhome insurance</h5>
+                                    <p class="card-text text-truncate text-truncate3 fw-light lh-base half--opacity mb-2 pe-1 pe-sm-0">Praesent in elit nec sapien mollis aliquam eu ac siconsequat vel est eu efficitur. <span class="d-none d-sm-inline-block">Donec</span> tincidunt ullamcorper. Suspendisse bibendum lacus si</p>
+                                    <div class="btn-with-icon d-flex align-items-center">
+                                        <h5 class="bodyS lh-1 mb-0 me-sm-1">Learn More</h5>
+                                        <div class="btn-icon transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8.639" height="12.162" viewBox="0 0 8.639 14.162">
+                                                <path id="Path_13296" data-name="Path 13296" d="M7.081,8.639,0,1.558,1.558,0,7.081,5.523,12.6,0l1.558,1.558Z" transform="translate(0 14.162) rotate(-90)" fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 filter motor sorn">
+                        <a href="guides_open.html">
+                            <div class="card articles-card position-relative border--dark card-hover overflow-hidden">
+                                <div class="card-img">
+                                    <img src="assets/images/section/articles-img-2.png" class="object-cover" alt="image">
+                                </div>
+                                <div class="card-label position-absolute">
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-none d-sm-inline-block">General</div>
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-sm-none">Guide</div>
+                                </div>
+                                <div class="card-body bg--light">
+                                    <h5 class="card-title text-capitalize mb-3 col-12 col-xl-11 col-xxl-9">Why not to add your bike to home insurance</h5>
+                                    <p class="card-text text-truncate text-truncate3 fw-light lh-base half--opacity mb-2 pe-1 pe-sm-0">Praesent in elit nec sapien mollis aliquam eu ac siconsequat vel est eu efficitur. <span class="d-none d-sm-inline-block">Donec</span> tincidunt ullamcorper. Suspendisse bibendum lacus si</p>
+                                    <div class="btn-with-icon d-flex align-items-center">
+                                        <h5 class="bodyS lh-1 mb-0 me-sm-1">Learn More</h5>
+                                        <div class="btn-icon transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8.639" height="12.162" viewBox="0 0 8.639 14.162">
+                                                <path id="Path_13296" data-name="Path 13296" d="M7.081,8.639,0,1.558,1.558,0,7.081,5.523,12.6,0l1.558,1.558Z" transform="translate(0 14.162) rotate(-90)" fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 filter insurance">
+                        <a href="guides_open.html">
+                            <div class="card articles-card position-relative border--dark card-hover overflow-hidden">
+                                <div class="card-img">
+                                    <img src="assets/images/section/articles-img-3.png" class="object-cover" alt="image">
+                                </div>
+                                <div class="card-label position-absolute">
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-none d-sm-inline-block">Insurance</div>
+                                    <div class="btn bodyS fw-light rounded-pill lh-1 d-sm-none">Guide</div>
+                                </div>
+                                <div class="card-body bg--light">
+                                    <h5 class="card-title text-capitalize mb-3">Our latest Insurance products are now live</h5>
+                                    <p class="card-text text-truncate text-truncate3 fw-light lh-base half--opacity mb-2 pe-1 pe-sm-0">Praesent in elit nec sapien mollis aliquam eu ac siconsequat vel est eu efficitur. <span class="d-none d-sm-inline-block">Donec</span> tincidunt ullamcorper. Suspendisse bibendum lacus si</p>
+                                    <div class="btn-with-icon d-flex align-items-center">
+                                        <h5 class="bodyS lh-1 mb-0 me-sm-1">Learn More</h5>
+                                        <div class="btn-icon transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8.639" height="12.162" viewBox="0 0 8.639 14.162">
+                                                <path id="Path_13296" data-name="Path 13296" d="M7.081,8.639,0,1.558,1.558,0,7.081,5.523,12.6,0l1.558,1.558Z" transform="translate(0 14.162) rotate(-90)" fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-link text-center d-sm-none mt-5">
+                    <a href="javascript:void(0);" class="btn">View All Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End articles section -->
+
+    <!-- quote section -->
+    <section class="learn-more-section quote-section guides-quote-section">
+        <div class="container">
+            <div class="learn-more-content text-center">
+                <div class="img-content d-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="273.19" height="153.18" viewBox="0 0 218.463 122.498">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Rectangle_1329" data-name="Rectangle 1329" width="207.055" height="71.339" fill="none"></rect>
+                            </clipPath>
+                        </defs>
+                        <g id="Group_3046" data-name="Group 3046" transform="matrix(0.966, 0.259, -0.259, 0.966, 336.339, 19.208)">
+                            <g id="Group_2992" data-name="Group 2992" transform="translate(-312.015 63.719)" clip-path="url(#clip-path)">
+                                <path id="Path_13220" data-name="Path 13220" d="M64.672,23.45c.014-.072.03-.143.044-.215-.739-.412-1.467-.841-2.22-1.227a.613.613,0,0,0-.954.491c-.07.368-.447,1.026.243,1.088a19.672,19.672,0,0,0,2.888-.138M29.629,47.21c-.045.053-.088.083-.1.122a1.478,1.478,0,0,0-.072.27,3.972,3.972,0,0,1-1.386,2.544,3.825,3.825,0,0,0-1.406,3.092,6.6,6.6,0,0,1-.086.7c-.168,1.349-.077,1.428,1.313,1.344.407-.025.52-.186.541-.558a17.445,17.445,0,0,1,1.667-6.7c.274-.569-.023-.692-.469-.808m6.185-8.055c-.307.491-.545.8-.712,1.147a4.17,4.17,0,0,1-2.506,2.16c-.269.094-.529.21-.8.313a3.371,3.371,0,0,0-2.018,2.7c-.133.577.362.738.731.869.168.06.551-.15.677-.339a18.634,18.634,0,0,1,4.979-5.072,6.016,6.016,0,0,0,.46-.388l-.816-1.392M143.835,54.017a3.109,3.109,0,0,0-.03.349c.007.377-.271.869.478.914,1.146.069,1.163.022,1.345-.791a39.945,39.945,0,0,1,1.126-4.181c.422-1.231.49-1.186-.7-1.836-.449-.246-.652-.185-.856.279a16.17,16.17,0,0,0-1.367,5.266m-80.372.35.1-.076c-.424-1.592-.76-3.214-1.3-4.768-.561-1.63-.333-1.479-1.931-.567a.694.694,0,0,0-.2.657,16.485,16.485,0,0,1,1.482,5.159c.02.15.1.408.171.417a4.262,4.262,0,0,0,1.393.023c.152-.034.187-.549.276-.844m113.243.9c.545.029,1.1.064.949-.671-.356-1.729-.649-3.481-1.171-5.163-.5-1.613-.448-1.25-1.756-.6-.457.227-.459.461-.3.934a47,47,0,0,1,1.36,4.681c.143.632.28.953.917.817m-146.356.01c.95,0,.863-.016,1.055-.893a40.607,40.607,0,0,1,1.164-4.238c.352-1.045.43-1.02-.531-1.585a.874.874,0,0,1-.124-.069c-.49-.413-.762-.238-.992.293a17.663,17.663,0,0,0-1.4,5.616c-.069.843-.032.872.824.875M10.762,69.869l.289.279h6.533c-.088-.419-.185-.78-.234-1.147-.069-.529-.069-1.069-.164-1.592-.035-.191-.281-.512-.394-.5a6.851,6.851,0,0,0-2.451.479,27.237,27.237,0,0,0-2.955,2.272,2.035,2.035,0,0,1-.624.206M61.1,47.091c-.127-.214-.211-.38-.315-.535a16.452,16.452,0,0,0-3.7-4.043c-1.545-1.175-1.194-1.066-2.169.4-.295.443-.219.667.2,1.024a40.193,40.193,0,0,1,3.439,3.224c1.016,1.1,1.008,1.178,2.252.265a2.134,2.134,0,0,0,.3-.331M33.486,48.224c.186-.21.318-.366.458-.513C35,46.611,36,45.448,37.131,44.434c1.217-1.087,1.259-1.016.383-2.42-.241-.386-.439-.409-.786-.165A16.837,16.837,0,0,0,32.1,46.643c-.091.144-.189.446-.132.492.468.377.973.71,1.513,1.089m141.879-1.089c-.138-.238-.223-.4-.323-.557a16.358,16.358,0,0,0-3.7-4.057c-1.689-1.314-1.272-1.027-2.192.378-.3.467-.175.689.218,1.035a46.553,46.553,0,0,1,3.479,3.3c.893.966.818,1.036,1.984.32a5.865,5.865,0,0,0,.536-.416m-22.8-3.721c-.279-.487-.54-.9-.762-1.34-.23-.451-.479-.472-.889-.18a17.273,17.273,0,0,0-4.057,4c-.988,1.377-.99,1.411.556,2.1a.731.731,0,0,0,.669-.163,16.351,16.351,0,0,1,4.124-4.025,2.252,2.252,0,0,0,.359-.389M45.945,37c0-1.1-.04-1.157-1.04-1.032a17.15,17.15,0,0,0-2.817.437c-1.631.492-3.219,1.122-4.822,1.7-.5.182-.571.5-.262.925a3.466,3.466,0,0,1,.286.484c.2.387.442.471.857.252A17.858,17.858,0,0,1,45.1,37.827c.652-.053,1.015-.217.843-.822M16.227,60.533c-.1-.741-.164-1.222-.231-1.7-.224-1.594-.435-3.19-.682-4.78-.108-.7-.265-.747-.889-.4-.516.289-1.012.616-1.542.877a.782.782,0,0,0-.458,1.026c.292,1.2.549,2.409.838,3.611.04.166.15.395.285.446.827.311,1.67.579,2.678.919m136.159-19.6c.374.641.648,1.08.89,1.533.209.391.444.406.87.268a44.648,44.648,0,0,1,4.43-1.288c1.645-.352,1.646-.272,1.6-1.98-.013-.5-.2-.7-.691-.6-1.488.307-2.992.561-4.454.958a21.216,21.216,0,0,0-2.645,1.106M45.945,40.107c0-.211-.01-.422,0-.632.025-.446-.169-.646-.637-.61a17.027,17.027,0,0,0-6.688,1.879.688.688,0,0,0-.2.64A4.1,4.1,0,0,0,39.1,42.53a.779.779,0,0,0,.668.239,17.272,17.272,0,0,1,5.7-1.512c.176-.019.371-.317.461-.526a1.665,1.665,0,0,0,.016-.625m123.1.932c-.29-.172-.479-.3-.682-.405a17.07,17.07,0,0,0-6.209-1.744c-.892-.086-.9-.066-.905.846a7.876,7.876,0,0,1-.006.84c-.056.5.129.653.652.741,1.379.233,2.743.554,4.1.885.632.154,1.368.721,1.822.54.522-.209.785-1.04,1.226-1.7M54.787,41.12a1.837,1.837,0,0,0-.22-.232,4.807,4.807,0,0,0-.431-.244,16.624,16.624,0,0,0-5.288-1.63c-2.217-.3-1.756-.345-1.831,1.564-.019.5.144.65.663.74,1.377.239,2.741.565,4.1.9.629.154,1.367.71,1.818.525.527-.215.8-1.04,1.189-1.619m7.95,23.9c-.728-.43-.712-1.017-.458-1.691a1.726,1.726,0,0,0,.033-.832c-.067-.446-.041-1.063-.323-1.292a3.28,3.28,0,0,0-3.116-.942,1.091,1.091,0,0,1-1.418-.473c-.064-.117-.479-.171-.651-.089-.562.27-.583.541.012,1.047a.842.842,0,0,1,.211,1.265,3.019,3.019,0,0,0,.6,2.705,3.107,3.107,0,0,0,3.153.536.779.779,0,0,1,.695.088c.562.617.876.262,1.266-.323m41.8-47c-.3-.88-.511-1.649-.831-2.372a.847.847,0,0,1,.321-1.14c1.184-1.017,2.341-2.065,3.512-3.1.262-.232.5-.414.152-.8s-.555-.3-.877-.012q-2.055,1.851-4.142,3.668a.787.787,0,0,0-.258.991c.185.481.333.975.533,1.45s.1.7-.426.867c-1.886.588-3.754,1.226-5.63,1.843-.36.118-.682.242-.534.732s.493.418.851.3q1.732-.565,3.46-1.138c1.259-.418,2.517-.843,3.87-1.295M69.1,22.541a3.093,3.093,0,0,0-2.807,4.187c.519,1.228,1.739,1.748,2.694,2.531.073.06.436-.091.553-.233,1.013-1.237,1.995-2.5,3-3.741.278-.341.211-.563-.126-.8-.52-.371-.985-.823-1.533-1.144a16.468,16.468,0,0,0-1.783-.795M20.667,20.987h2.786c1.783,0,2.007-.289,1.571-2.032a2.723,2.723,0,0,0-.088-.266,4.464,4.464,0,0,0-8.692,1.7c.018.454.179.612.636.6,1.262-.02,2.525-.007,3.787-.006m140.009,44.02a8.838,8.838,0,1,0-8.989-8.866,8.956,8.956,0,0,0,8.989,8.866M199.19,44.844c-1.978,0-3.958.014-5.936-.008-.6-.007-.861.167-.841.8q.062,1.821,0,3.644c-.024.662.236.888.878.824a20.52,20.52,0,0,1,2.243-.166c1.287.015,2.573.138,3.859.149.737.007,1.476-.168,2.214-.169.7,0,1.408.136,2.113.18.446.029.9-.039,1.342.006.619.062.849-.139.827-.772q-.065-1.855,0-3.713c.021-.63-.219-.8-.832-.789-1.954.032-3.91.012-5.864.014M50.572,64.093a9.568,9.568,0,0,0,2.793,5.294l-1.222.68c.017.046.035.092.053.138h4.033c-.144-.165-.2-.286-.29-.322a6.039,6.039,0,0,1-2.659-2.269,10.026,10.026,0,0,1-1.459-3.029,7.281,7.281,0,0,1,.4-4.623,12.759,12.759,0,0,1,1.23-1.833,5.487,5.487,0,0,1,2.828-2.282c.924-.334,1.912-.495,2.855-.78a.733.733,0,0,0,.4-.51c.069-.475-.293-.542-.655-.471-1.134.221-2.263.467-3.463.718a9.081,9.081,0,0,0-11.841-7.014,8.77,8.77,0,0,0-5.8,10.733A8.372,8.372,0,0,0,41.587,63.6a9.311,9.311,0,0,0,8.985.492m-27.3-13.41c0-.768-.024-1.38.005-1.989.044-.927.111-1.853.194-2.777a.7.7,0,0,0-.582-.814c-1.02-.326-2.014-.75-3.052-.992a3.627,3.627,0,0,0-1.927.025,10.9,10.9,0,0,1-4.188.719c-1.524-.065-3.055-.017-4.582-.012-1.192,0-1.448.315-1.031,1.393a3.442,3.442,0,0,1,0,2.578c-.625,1.707-.655,1.3.93,1.761a2.669,2.669,0,0,0,2.139.13,6.447,6.447,0,0,1,1.764-.477c.871-.16,1.772-.189,2.628-.4,1.183-.294,2.256-.949,3.573-.794a5.491,5.491,0,0,1,1.551.458c.842.362,1.665.766,2.58,1.192m-1.2,7.86a5.01,5.01,0,0,0,0,.685c.478,3.406.971,6.81,1.437,10.217.088.645.391.83,1.039.827,5.206-.023,10.412-.012,15.618-.014.2,0,.4-.028.6-.042a.907.907,0,0,0-.471-.426,14.992,14.992,0,0,1-8.552-9.877c-.312-1.084-.3-1.058-1.458-1.095-2.707-.088-5.432.257-8.218-.275m65.4-35.3c.014-.057.029-.115.043-.172-.2-.138-.407-.281-.615-.412-4.216-2.651-8.46-5.259-12.641-7.96C67.873,10.584,61.395,6.636,54.717,3a4.227,4.227,0,0,0-2.606-.563c-2.436.313-4.865.684-7.308.932a3.147,3.147,0,0,0-2.169,1.263c-3.014,3.427-5.69,7.177-9.581,9.777a1.6,1.6,0,0,0-.761,1.611,19.177,19.177,0,0,1,.015,2.105.657.657,0,0,0,.569.75c1.378.374,2.76.748,4.116,1.191.542.177.773.039.987-.43,1.256-2.751,2.534-5.491,3.8-8.239a3.245,3.245,0,0,0,.141-.5l-.115-.084L34.07,16.961c-.77-.647-.769-.765-.08-1.311,1.336-1.058,2.653-2.141,4-3.179,2.344-1.8,4.619-3.7,7.092-5.317,2.093-1.365,4.42-2.388,6.652-3.547a2.033,2.033,0,0,1,2.711.387,6.206,6.206,0,0,0,.871.728c3.352,2.558,6.359,5.542,10.462,7.121,2.166.834,4.062,2.333,6.1,3.492A16.758,16.758,0,0,1,77.436,19.9a8.864,8.864,0,0,1,1.254,2.7c.162.557.333.718.874.714,2.412-.017,4.824-.006,7.236-.01.221,0,.441-.037.662-.057m53.427,1.1H122.835c-1.359,0-1.359,0-1.358,1.335,0,1.022,0,1.022,1.08,1.022h22.567c.382,0,.765-.015,1.146.009.432.027.714.546.428.849a1.17,1.17,0,0,1-.769.2q-11.749.015-23.5.009c-.946,0-.951,0-.952.944q0,4.844,0,9.689c0,1.2.018,1.25,1.175.891,3.168-.984,6.42-.759,9.662-.734.447,0,.59.21.551.614-.057.6-.522.443-.87.437-3.248-.061-6.494-.171-9.649.839-.607.194-.9.42-.885,1.1.043,2.667.018,5.336.019,8,0,.958,0,.963,1.012.963,5.611,0,11.224-.017,16.835.02.783,0,1.041-.284,1.267-.959,2.731-8.141,8.441-12.957,17.022-14.5a2.669,2.669,0,0,0,2.549-2.907q.005-3.4,0-6.81c0-1.012,0-1.014-1.01-1.014H140.889m14.256,45.811a3.515,3.515,0,0,0-.509-.334,5.791,5.791,0,0,1-1.453-.575,24.621,24.621,0,0,1-3.9-3.223,15.273,15.273,0,0,1-3.33-6.363c-.168-.731-.517-.848-1.172-.847-6.5.016-12.992-.005-19.488.018a5.386,5.386,0,0,1-4.407-2.069,1.226,1.226,0,0,0-.818-.409c-2.627-.03-5.254-.025-7.881,0a1.044,1.044,0,0,0-.732.3,5.694,5.694,0,0,1-4.923,2.19c-12.991-.037-25.982-.02-38.974-.016-.34,0-.68.04-1.085.064,2.06,4.823.835,8.54-3.763,11.3.383.035.564.067.746.067q8.239,0,16.478-.008c.677,0,1.355-.168,2.032-.163,1.545.011,3.091.108,4.637.119,1.089.007,2.179-.1,3.268-.1.635,0,1.272.138,1.908.142.3,0,.6-.25.9-.237,1.081.049,2.16.181,3.242.241.657.036,1.328-.072,1.977.008s1.216-.232,1.913-.057a9.878,9.878,0,0,0,2.763.05,17.191,17.191,0,0,1,3.693-.013c1,.172,2-.157,3.033-.029,1.325.163,2.69,0,4.032.063,1.269.065,2.519-.225,3.8-.049a17.9,17.9,0,0,0,2.889-.041c.728-.021,1.456-.081,2.183-.066.979.02,1.958.12,2.938.139,2.232.044,4.464-.056,6.7,0,.414.009.833-.173,1.249-.169.908.007,1.813.105,2.72.115a17.1,17.1,0,0,1,2.765-.037c1.794.321,3.567-.171,5.36.061,1.038.134,2.182-.221,3.175-.132,1.226.111,2.457-.014,3.673.155a8.221,8.221,0,0,0,1.19-.084c1.009-.014,2.019,0,3.17,0M107.612,5.335h.984c2.866,0,5.732.024,8.6-.016.729-.01.927.2.923.908-.029,5.687-.016,11.373-.017,17.061,0,1.056,0,1.058-1.1,1.058q-20.561,0-41.121-.009c-.819,0-1.583-.063-1.931.9-.1.292-.408.512-.6.778a1.647,1.647,0,0,0-.172.34,28.9,28.9,0,0,1,3.915,1.23,3.835,3.835,0,0,0,3.409.042,12.642,12.642,0,0,1,5.217-.95c11.224.05,22.448.025,33.672.025,1.02,0,1.021,0,1.021-1q0-9.758-.011-19.517c0-.618.154-.862.839-.86q13.181.031,26.363.012a12.591,12.591,0,0,1,5.084,1,11.7,11.7,0,0,1,4.934,3.939q3.282,4.554,6.515,9.141a3.041,3.041,0,0,1-2.214,4.893c-.593.074-.678.331-.674.82q.023,3.686,0,7.372a3.639,3.639,0,0,1-3.185,3.59A19.717,19.717,0,0,0,145.543,42.8a18.6,18.6,0,0,0-4.713,11.64c-.012.254.028.632.193.752a1.112,1.112,0,0,0,1.7-.84,16.723,16.723,0,0,1,1.486-6.033,17.993,17.993,0,0,1,22.108-9.634c7.518,2.545,11.634,7.921,12.377,15.705.067.694.258.9.972.9,5.683-.027,11.367-.014,17.051-.013,1.886,0,3.773-.019,5.659.01.57.008.758-.176.733-.727a23.152,23.152,0,0,1,.005-2.6c.047-.68-.234-.817-.864-.813-3.3.025-6.592.012-9.887.011-1.016,0-1.017,0-1.019-1.027q0-2.633,0-5.266c0-1.059,0-1.061,1.054-1.062q4.728,0,9.457,0c.5,0,.8-.064.6-.667a15.361,15.361,0,0,0-8.621-9.694c-7.018-3.051-14.11-5.937-21.158-8.92a3.01,3.01,0,0,1-1.178-.953q-4.365-5.907-8.668-11.859a23.617,23.617,0,0,0-6.484-6.355A28.961,28.961,0,0,0,141.329,1.15c-5.344-.15-10.7-.058-16.047-.047q-3.436.008-6.872.127a25.935,25.935,0,0,0-6.72.9,7.612,7.612,0,0,0-4.078,3.2M24.318,52.222c-.321-.108-.547-.166-.759-.258-1.135-.487-2.269-.977-3.4-1.479a3.41,3.41,0,0,0-2.362-.243q-2.443.662-4.9,1.264c-.762.187-1.539.31-2.3.484-.22.049-.6.173-.6.267a1.211,1.211,0,0,0,.255.8,7.13,7.13,0,0,0,.941.629.8.8,0,0,0,1.039.011,19.956,19.956,0,0,1,2.1-1.2,1.59,1.59,0,0,1,1.052-.077c.724.225,1.4.61,2.122.829a2.47,2.47,0,0,0,1.222-.012c.481-.114.918-.393,1.4-.534s.8-.009.786.569a7.006,7.006,0,0,0,.067,1.261c.324,2.019,1.149,3.369,3.655,3.252.529-.024.768-.139.781-.71.034-1.4.129-2.8.2-4.195a4.416,4.416,0,0,1,1.6-3.391,3.31,3.31,0,0,0,1.209-2.31c.058-.558.164-1.111.262-1.664a4.411,4.411,0,0,1,3.074-3.867,4.375,4.375,0,0,0,2.7-2.33,3.981,3.981,0,0,1,1.286-1.547,20.781,20.781,0,0,1,10.612-2.934c.48-.009.706.165.682.658-.025.514.019,1.031-.012,1.544s.111.734.7.779A17.911,17.911,0,0,1,56.6,40.835,17.531,17.531,0,0,1,64.24,52.393c.179.929.281,1.872.426,2.86,12.521-.024,25.048.037,37.575,0,12.464-.034,24.927.071,37.528-.056-.458-1.26.249-2.4.028-3.733-1.107.623-2.33-.327-3.4.315a2.015,2.015,0,0,0-.591-.2c-1.143-.024-2.287-.007-3.43-.023a31.028,31.028,0,0,1-3.216.033,35.565,35.565,0,0,0-4.136-.018c-.777,0-1.557-.061-2.329,0-.943.076-1.941-.333-2.831.278-.021.016-.108-.085-.172-.1a3.505,3.505,0,0,0-.807-.183c-1.344-.02-2.688,0-4.032-.016-1.6-.021-3.193.2-4.8.061a38.829,38.829,0,0,0-4.126-.043c-.793.016-1.584.2-2.375.194-.985-.007-1.968-.17-2.953-.193-1.5-.034-3-.019-4.5,0-.389.006-.778.17-1.165.162-1.463-.031-2.927-.12-4.39-.152-1.246-.028-2.492-.011-3.738-.007a11.7,11.7,0,0,0-2.139.055c-.687.131-1.3-.227-1.974-.092a9.869,9.869,0,0,1-2.027.179c-1.129-.012-2.256-.113-3.386-.148-.291-.009-.589.133-.88.127-1.151-.026-2.3-.091-3.451-.127-.576-.018-1.152,0-1.708,0-.094-.868.239-1.06.936-1.057,6.256.023,12.512.013,18.769.013l28.513,0c.952,0,.954-.005.954-.943,0-2.6-.008-5.2.006-7.793,0-.542-.106-.777-.74-.591-1.038.3-2.1.529-3.139.784-.359-.931-.315-1.017.5-1.216.833-.2,1.658-.442,2.5-.614a.948.948,0,0,0,.889-1.1c-.034-3.415-.016-6.833-.016-10.249,0-1.024,0-1.025-1.077-1.026q-17.48,0-34.96.015a8.048,8.048,0,0,0-2.088.366c-.87.24-1.7.6-2.569.862A3.232,3.232,0,0,1,77.48,28.9c-1.143-.459-2.329-.815-3.5-1.2-.491-.159-1-.269-1.6-.429-.061.07-.218.242-.364.422-.738.918-1.485,1.83-2.2,2.763-.3.385-.548.429-.935.114-.808-.657-1.664-1.257-2.466-1.921a3.668,3.668,0,0,1-1.4-3.3c.066-.682-.119-.833-.792-.8A147.729,147.729,0,0,0,38.253,27.8a10.4,10.4,0,0,0-5.393,2.52,2.656,2.656,0,0,1-1.414.769,16,16,0,0,1-3.263.061,3.8,3.8,0,0,0-3.164.93,8.021,8.021,0,0,1-1.607,1.279,13.388,13.388,0,0,1-2.971,1.291c-1.208.307-2.5.276-3.729.521a19.1,19.1,0,0,0-2.905.915.779.779,0,0,0-.363.663c.444,2.177.947,4.342,1.406,6.517.1.471.344.584.759.46.523-.156,1.048-.313,1.558-.507a3.847,3.847,0,0,1,2.581-.274c1.451.459,2.881.984,4.331,1.447a.61.61,0,0,1,.486.717c-.048,1.988-.067,3.977-.111,5.965-.007.36-.082.717-.136,1.148M17.1,22.194l-2.042-.257c0-.578-.016-.95,0-1.32a7.779,7.779,0,0,1,.166-1.826,6.118,6.118,0,0,1,2.355-3.335,5.015,5.015,0,0,1,3.527-.99,5.913,5.913,0,0,1,3.52,1.719A5.109,5.109,0,0,1,26.2,19.611c0,.608.04,1.218,0,1.824a2.464,2.464,0,0,1-.244.715H23.174c-.284,1.934-.576,3.927-.871,5.919-.151,1.022-.318,2.042-.46,3.065-.066.471-.1.946-.127,1.421,0,.094.1.281.141.277a1.326,1.326,0,0,0,.651-.151,25.555,25.555,0,0,0,2.211-1.83A3.969,3.969,0,0,1,27.155,30a17.616,17.616,0,0,1,2.579.194,3.845,3.845,0,0,0,2.794-.962,7.526,7.526,0,0,0,.936-1.007,7.477,7.477,0,0,1,1.122-.534c1.179-.344,2.361-.7,3.565-.942,3.016-.6,6.028-1.261,9.073-1.67,4.159-.559,8.348-.912,12.525-1.34.37-.038.584-.145.588-.535a4.13,4.13,0,0,1,.054-.558c.238-1.675,1.431-2.257,2.932-1.429.749.413,1.5.818,2.233,1.26a.807.807,0,0,0,1.028-.031,3.979,3.979,0,0,1,5.024.091,3.347,3.347,0,0,0,2.423.778c.952-.062,1.91-.009,2.866-.015.735,0,.982-.233.677-.885a11.471,11.471,0,0,0-1.579-2.547,19.718,19.718,0,0,0-2.266-2.047,1.979,1.979,0,0,0-1.62-.723c-.256.033-.542-.314-.841-.409-1.622-.515-3.251-1.006-4.877-1.5-1.791-.549-3.557-1.21-5.383-1.6a10.576,10.576,0,0,1-2.372-1.213c-.823-.385-1.662-.746-2.449-1.2-.853-.487-1.634-1.094-2.482-1.591-1.036-.609-2.109-1.157-3.271-1.789a15.2,15.2,0,0,1-.927,2.607c-.635,1.116-.78,2.495-2.332,3.125-2.213.9-4.283,2.134-6.4,3.244a1.212,1.212,0,0,0-.541.522c-.494,1.153-.914,2.338-1.433,3.48a.929.929,0,0,1-1.011.657,7.233,7.233,0,0,1-1.383-.429c-1.226-.312-2.458-.6-3.68-.931-.459-.124-.893-.333-1.431-.539,0-1.453-.009-3.077.013-4.7a1.038,1.038,0,0,1,.287-.545,2.364,2.364,0,0,1,.518-.482c3.457-2.322,5.984-5.537,8.644-8.625.615-.715,1.216-1.443,1.862-2.131a1.555,1.555,0,0,1,.821-.493c3-.414,6-.8,9.009-1.172a4.107,4.107,0,0,1,2.6.606C59.523,4.584,64.055,7.087,68.46,9.79c6.752,4.143,13.416,8.425,20.118,12.646.317.2.647.378,1.045.608a5.993,5.993,0,0,0,.309-.67c.559-1.812,1.19-3.608,1.619-5.449a17.524,17.524,0,0,1,.655-1.907c.518-1.459.2-2.918.155-4.376-.029-1.049-.137-2.1-.213-3.145-.07-.983-.145-1.965-.217-2.947-.028-.387-.074-.756.525-.77.551-.012.532.325.554.69q.159,2.591.333,5.181a.792.792,0,0,0,.222.5,5.457,5.457,0,0,0,.285-.63c.225-.714.43-1.434.645-2.152.111-.371.31-.538.741-.407s.39.4.3.715c-.39,1.3-.712,2.625-1.188,3.893a9.253,9.253,0,0,0-.528,4.605c.132.972.067.977-.94,1.049-.1.008-.264.092-.277.162-.209,1.187-.9,2.246-1.005,3.457l.263.226a2.194,2.194,0,0,1,.273-.566q6.694-7.358,13.406-14.7c.8-.871,1.608-1.727,2.408-2.595A8.417,8.417,0,0,1,112.607.79,48.95,48.95,0,0,1,122.23.048c6.041-.05,12.085-.077,18.126,0A32.075,32.075,0,0,1,155.7,3.726a23.455,23.455,0,0,1,7.769,7.028c2.9,4.033,5.845,8.033,8.8,12.026a3,3,0,0,0,1.2.924c6.876,2.9,13.792,5.72,20.642,8.684a16.389,16.389,0,0,1,9.453,10.744c.156.51.377.692.885.673.62-.023,1.242.008,1.863-.007.44-.009.651.138.648.608-.016,2.059-.011,4.119,0,6.179,0,.416-.167.594-.6.579-.524-.019-1.05.008-1.576,0-.4-.01-.593.105-.607.555-.051,1.541-.069,1.54,1.5,1.539,1.471,0,1.355-.118,1.358,1.319,0,1.124-.044,2.249.016,3.369.038.734-.238.9-.943.9q-14.33-.03-28.658-.014c-1.717,0-1.675.012-2.188,1.64-.294.933-.748,1.817-1.129,2.723a12,12,0,0,1-2.263,3.115c-.322.369-.58.794-.921,1.144-.158.162-.491.156-.663.312a12.381,12.381,0,0,1-3.673,2.13.507.507,0,0,0-.163.132,1,1,0,0,0-.089.221c1.512,0,2.985.025,4.458-.009.971-.023,1.941-.183,2.912-.187.764,0,1.528.191,2.294.2q2.993.047,5.984,0c.815-.012,1.629-.176,2.443-.184.72-.006,1.441.156,2.162.16,4.934.022,9.869.021,14.8.035.355,0,.864-.112.791.493a.832.832,0,0,1-.463.533,2.122,2.122,0,0,1-.778.029H1.144a2.042,2.042,0,0,1-.778-.037A.747.747,0,0,1,0,70.735c-.009-.147.218-.37.392-.447a1.684,1.684,0,0,1,.636-.029c2.436,0,4.873.018,7.308-.02a2.1,2.1,0,0,0,1.141-.419c1.134-.856,2.267-1.722,3.315-2.674a4.546,4.546,0,0,1,3.336-1.316c.7.026.849-.278.74-.9-.153-.876-.266-1.759-.353-2.643-.049-.49-.349-.677-.764-.805-.887-.274-1.766-.573-2.658-.827a.962.962,0,0,1-.785-.79c-.3-1.4-.664-2.777-.942-4.177a1.439,1.439,0,0,0-.755-1.107c-.229-.122-.431-.3-.666-.409A1.594,1.594,0,0,1,8.862,52.3c.1-.52-.178-.763-.7-.841-.47-.07-.928-.213-1.391-.325-.4-.1-.557-.319-.4-.722.137-.348.229-.715.38-1.057a3.879,3.879,0,0,0,.207-3.227c-.48-1.188.142-2.066,1.427-2.3a.733.733,0,0,0,.682-.748,14.84,14.84,0,0,0,.13-5.154c-.341-1.519.723-2.537,2.37-2.495,1.372.035,2.478-.716,3.676-1.19.108-.042.177-.263.2-.41.237-1.585.474-3.169.682-4.758.057-.428-.009-.87.029-1.3.018-.2.195-.389.226-.594.152-.986.328-1.971.382-2.964a1.884,1.884,0,0,1,.092-.717,5.838,5.838,0,0,0,.242-1.3" transform="translate(0 0)"></path>
+                                <path id="Path_13221" data-name="Path 13221" d="M23.093,57.011a2.776,2.776,0,0,0,.127-4.082,1.478,1.478,0,0,1,.015-.91,3.581,3.581,0,0,1,1.638-1.644c.1-.05.077-.573-.057-.76a14.294,14.294,0,0,0-1.409-1.67c-.854-.868-.564-1.912-.509-2.914a.784.784,0,0,1,.612-.162,3.776,3.776,0,0,1,.786.583,1.277,1.277,0,0,0,.008,1.871,22.908,22.908,0,0,1,1.613,1.937,1.506,1.506,0,0,1-.562,2.248,2.9,2.9,0,0,1-.465.31c-.636.234-.623.654-.323,1.113a4.016,4.016,0,0,1,.4,3.3c-.287,1.217-.728,1.42-1.869.78" transform="translate(-12.644 -24.867)"></path>
+                                <path id="Path_13222" data-name="Path 13222" d="M3.96,78.554A2.656,2.656,0,0,1,5.131,76.2c1.02-.671,1.2-1.157.632-2.238a3.285,3.285,0,0,1-.016-3.339c.265-.489.386-1.052.612-1.564.129-.291.2-.721.738-.509.437.17.59.384.367.846-.337.7-.594,1.437-.923,2.141a1.592,1.592,0,0,0,.031,1.542,6.8,6.8,0,0,1,.381.905,2.347,2.347,0,0,1-.961,2.946c-.986.683-1.1.99-.725,2.126.271.822.594,1.628.838,2.457a.647.647,0,0,1-.249.583c-.166.079-.6,0-.646-.115-.479-1.216-.9-2.452-1.251-3.424" transform="translate(-2.195 -37.972)"></path>
+                                <path id="Path_13223" data-name="Path 13223" d="M65.558,47.07c-.106.616-.221,1.367-.37,2.111a3.519,3.519,0,0,1-.373,1.216c-.112.174-.558.194-.852.189-.4-.008-.423-.283-.321-.6.216-.674.453-1.345.609-2.033.048-.21-.074-.62-.23-.685a2.612,2.612,0,0,1-1.456-2.057c-.092-.418.314-.994.605-1.429.5-.745.412-.979-.146-1.683a9.04,9.04,0,0,1-1.06-2.125c-.033-.078.264-.363.455-.438a.57.57,0,0,1,.524.131,22.746,22.746,0,0,1,1.7,3.218,1.81,1.81,0,0,1-.512,1.54c-.479.458-.515.892-.2,1.269a12.388,12.388,0,0,0,1.621,1.377" transform="translate(-34.352 -21.908)"></path>
+                                <path id="Path_13224" data-name="Path 13224" d="M34.427,69.585a2.846,2.846,0,0,0,1.687,2.75,2.194,2.194,0,0,1,1.372,1.508c.105.534.433.7.848.531.16-.064.266-.553.2-.8a3.236,3.236,0,0,0-1.812-2.128c-1.355-.676-1.571-1.721-.648-2.923a15.029,15.029,0,0,0,1.02-1.345.684.684,0,0,0-.136-.666.706.706,0,0,0-.684.042,13.185,13.185,0,0,0-1.425,1.833,4.847,4.847,0,0,0-.423,1.2m41.629-.1c.333.3.443.928,1.021.493,2.1-1.588,4.519-1.657,6.969-1.3,2.618.385,5.2.97,7.821,1.356,1.6.235,3.229.259,4.844.377.373.027.594-.1.571-.516-.019-.36-.136-.565-.556-.547-3.235.134-6.341-.673-9.479-1.252a23.808,23.808,0,0,0-6.4-.589,7.524,7.524,0,0,0-4.794,1.975M117.228,65.9c-1.191-.065-1.341.072-1.553.892-.24.928-.558,1.836-.787,2.767a3.942,3.942,0,0,1-3.428,3.043q-2.978.6-5.925,1.341a7.368,7.368,0,0,0-3.821,1.937c-.135.147-.23.549-.147.625a.648.648,0,0,0,.93.115,8.726,8.726,0,0,1,2.4-1.333c2.193-.631,4.423-1.152,6.661-1.612,2.294-.471,3.866-1.616,4.41-3.935.161-.683.421-1.342.583-2.024.145-.61.441-.83,1.106-.733,1.7.25,3.405.472,5.115.618a3.758,3.758,0,0,0,1.786-.275c1.342-.6,2.624-1.334,3.938-2,.356-.18.525-.371.3-.766s-.448-.376-.815-.179c-1.15.618-2.339,1.166-3.475,1.807a3.27,3.27,0,0,1-2.2.332c-1.8-.254-3.6-.445-5.079-.622M36.751,82.762c.053-.43.128-.789.135-1.148.044-1.988.063-3.977.111-5.965a.61.61,0,0,0-.485-.718c-1.45-.463-2.88-.988-4.332-1.447a3.856,3.856,0,0,0-2.582.274c-.508.195-1.033.352-1.557.508-.415.123-.66.01-.759-.461-.459-2.174-.962-4.34-1.406-6.518a.778.778,0,0,1,.364-.662,19.194,19.194,0,0,1,2.9-.915c1.228-.245,2.521-.214,3.728-.521A13.372,13.372,0,0,0,35.844,63.9a8.051,8.051,0,0,0,1.607-1.28,3.8,3.8,0,0,1,3.164-.93,15.969,15.969,0,0,0,3.263-.061,2.663,2.663,0,0,0,1.415-.77,10.4,10.4,0,0,1,5.392-2.52A147.744,147.744,0,0,1,76.64,55.09c.673-.03.858.121.792.8a3.669,3.669,0,0,0,1.4,3.3c.8.664,1.657,1.264,2.465,1.921.388.315.64.271.936-.114.718-.933,1.466-1.844,2.2-2.762.146-.18.3-.352.363-.422.605.159,1.113.269,1.6.428,1.174.381,2.36.737,3.5,1.2a3.236,3.236,0,0,0,2.231.117c.864-.263,1.7-.622,2.568-.864a8.08,8.08,0,0,1,2.089-.365q17.48-.033,34.959-.015c1.077,0,1.078,0,1.078,1.026,0,3.417-.018,6.834.016,10.25a.948.948,0,0,1-.89,1.1c-.839.172-1.664.411-2.5.614-.817.2-.862.284-.5,1.216,1.038-.255,2.1-.479,3.139-.784.634-.186.742.049.74.59-.014,2.6,0,5.2-.007,7.793,0,.937,0,.942-.955.942q-14.255,0-28.511,0c-6.257,0-12.513.01-18.77-.013-.7,0-1.029.188-.936,1.057.555,0,1.132-.015,1.708,0,1.151.035,2.3.1,3.451.127.292.007.588-.135.88-.127,1.129.036,2.257.137,3.386.149a9.879,9.879,0,0,0,2.028-.18c.676-.135,1.288.224,1.974.092a11.748,11.748,0,0,1,2.14-.054c1.245,0,2.492-.021,3.738.006,1.464.033,2.927.122,4.39.152.387.008.776-.156,1.165-.162,1.5-.021,3-.037,4.5,0,.985.023,1.968.187,2.954.193.79,0,1.581-.179,2.375-.194a38.72,38.72,0,0,1,4.126.043c1.612.141,3.2-.083,4.805-.062,1.343.018,2.687,0,4.032.016a3.493,3.493,0,0,1,.807.184c.064.016.151.116.172.1.89-.612,1.889-.2,2.831-.279.771-.062,1.552,0,2.33,0a35.37,35.37,0,0,1,4.136.018,31.144,31.144,0,0,0,3.215-.034c1.143.017,2.286,0,3.429.024a2.027,2.027,0,0,1,.591.2c1.074-.642,2.3.309,3.4-.315.221,1.331-.485,2.473-.028,3.733-12.6.128-25.064.022-37.527.057-12.527.035-25.054-.026-37.575,0-.145-.989-.248-1.932-.427-2.86a17.525,17.525,0,0,0-7.639-11.558,17.9,17.9,0,0,0-8.885-3.016c-.586-.045-.729-.268-.7-.779s-.012-1.031.012-1.544c.023-.493-.2-.667-.683-.657A20.774,20.774,0,0,0,48.17,68.312a3.961,3.961,0,0,0-1.286,1.546,4.373,4.373,0,0,1-2.7,2.331,4.41,4.41,0,0,0-3.074,3.867c-.1.553-.2,1.106-.262,1.664a3.306,3.306,0,0,1-1.208,2.31,4.416,4.416,0,0,0-1.6,3.39c-.074,1.4-.169,2.8-.2,4.2-.013.569-.252.685-.781.709-2.506.117-3.332-1.233-3.656-3.252a7.131,7.131,0,0,1-.068-1.26c.012-.579-.323-.706-.786-.569s-.914.42-1.395.533a2.47,2.47,0,0,1-1.222.013c-.725-.219-1.4-.605-2.122-.83a1.591,1.591,0,0,0-1.053.077,20.222,20.222,0,0,0-2.1,1.2.806.806,0,0,1-1.04-.01,7.22,7.22,0,0,1-.941-.63,1.212,1.212,0,0,1-.254-.8c0-.094.378-.217.6-.268.766-.173,1.543-.3,2.3-.484q2.46-.606,4.9-1.264a3.415,3.415,0,0,1,2.363.243c1.129.5,2.264.991,3.4,1.48.212.09.438.15.759.257" transform="translate(-12.432 -30.54)" fill="#fff"></path>
+                                <path id="Path_13225" data-name="Path 13225" d="M198.652,6.658a7.609,7.609,0,0,1,4.078-3.2,25.913,25.913,0,0,1,6.719-.9q3.436-.122,6.873-.127c5.349-.012,10.7-.1,16.046.047a28.959,28.959,0,0,1,15.023,4.208,23.62,23.62,0,0,1,6.484,6.355Q258.161,19,262.542,24.9a3.019,3.019,0,0,0,1.177.953c7.048,2.984,14.14,5.869,21.159,8.92a15.361,15.361,0,0,1,8.621,9.694c.2.6-.1.668-.6.667-3.153-.009-6.3,0-9.457,0-1.05,0-1.053,0-1.054,1.062q0,2.633,0,5.266c0,1.024,0,1.027,1.018,1.027,3.3,0,6.591.014,9.887-.011.63,0,.911.132.864.813a23.143,23.143,0,0,0-.005,2.6c.024.551-.163.736-.734.727-1.886-.029-3.773-.009-5.659-.009-5.684,0-11.368-.014-17.051.013-.715,0-.905-.2-.972-.9-.743-7.784-4.859-13.161-12.378-15.706a17.994,17.994,0,0,0-22.107,9.635,16.732,16.732,0,0,0-1.486,6.033,1.112,1.112,0,0,1-1.7.841c-.166-.12-.205-.5-.193-.752a18.6,18.6,0,0,1,4.713-11.64A19.712,19.712,0,0,1,249.1,37.411a3.639,3.639,0,0,0,3.185-3.59q.02-3.686,0-7.372c0-.49.082-.746.675-.82a3.042,3.042,0,0,0,2.214-4.893q-3.224-4.592-6.515-9.141a11.7,11.7,0,0,0-4.933-3.939,12.594,12.594,0,0,0-5.084-1q-13.182.011-26.364-.012c-.685,0-.841.242-.839.86q.026,9.759.011,19.518c0,1,0,1-1.021,1-11.224,0-22.448.025-33.672-.025a12.64,12.64,0,0,0-5.217.95,3.829,3.829,0,0,1-3.409-.043,29.073,29.073,0,0,0-3.916-1.23,1.66,1.66,0,0,1,.172-.341c.193-.266.5-.486.6-.778.348-.965,1.112-.9,1.93-.9q20.561.019,41.121.008c1.1,0,1.1,0,1.1-1.058,0-5.687-.012-11.374.016-17.06,0-.711-.193-.917-.922-.907-2.865.04-5.731.016-8.6.016Z" transform="translate(-91.039 -1.324)" fill="#fff"></path>
+                                <path id="Path_13226" data-name="Path 13226" d="M280.218,65.024q-1.678,0-3.355,0c-.386,0-.776-.044-.767.545.009.553.381.5.735.5q3.355,0,6.71,0c.36,0,.741.037.746-.5.006-.577-.4-.54-.787-.541-1.094,0-2.188,0-3.283,0" transform="translate(-153.07 -36.05)" fill="#fff"></path>
+                                <path id="Path_13227" data-name="Path 13227" d="M127.629,26.243c-.221.02-.441.056-.662.057-2.411,0-4.823-.007-7.235.01-.542,0-.713-.156-.875-.714a8.858,8.858,0,0,0-1.254-2.7,16.758,16.758,0,0,0-5.549-4.562c-2.041-1.159-3.937-2.658-6.1-3.493-4.1-1.58-7.11-4.563-10.463-7.121a6.107,6.107,0,0,1-.87-.728A2.034,2.034,0,0,0,91.907,6.6c-2.232,1.159-4.559,2.182-6.652,3.547-2.473,1.613-4.748,3.518-7.092,5.318-1.352,1.038-2.669,2.121-4,3.179-.689.546-.689.664.08,1.311l7.734-6.147.115.084a3.32,3.32,0,0,1-.141.5c-1.265,2.746-2.543,5.487-3.8,8.237-.214.469-.444.607-.987.43-1.356-.443-2.737-.816-4.115-1.191a.659.659,0,0,1-.569-.751,18.84,18.84,0,0,0-.015-2.1,1.6,1.6,0,0,1,.76-1.61c3.892-2.6,6.568-6.35,9.581-9.778a3.146,3.146,0,0,1,2.169-1.263c2.443-.248,4.873-.618,7.308-.932A4.219,4.219,0,0,1,94.886,6c6.677,3.631,13.155,7.58,19.53,11.7,4.182,2.7,8.426,5.309,12.641,7.96.209.132.41.275.615.413l-.044.172" transform="translate(-40.168 -2.997)" fill="#fff"></path>
+                                <path id="Path_13228" data-name="Path 13228" d="M93.658,122.836c.632-.183,1.777-.469,2.883-.862a1.138,1.138,0,0,0,.593-.821,8.975,8.975,0,0,1,3.427-6.395,1.143,1.143,0,0,0,.32-.887,7.926,7.926,0,0,0-14.058-3.6,7.183,7.183,0,0,0-.848,8.171c1.439,2.853,3.9,4.243,7.682,4.4m3.52.111a9.31,9.31,0,0,1-8.985-.493,8.372,8.372,0,0,1-3.812-5.078,8.77,8.77,0,0,1,5.8-10.733,9.081,9.081,0,0,1,11.841,7.013c1.2-.25,2.329-.5,3.463-.717.362-.07.723,0,.655.471a.732.732,0,0,1-.4.51c-.945.285-1.932.446-2.856.78a5.49,5.49,0,0,0-2.829,2.282,12.669,12.669,0,0,0-1.23,1.834,7.278,7.278,0,0,0-.4,4.622,9.985,9.985,0,0,0,1.46,3.029,6.031,6.031,0,0,0,2.658,2.27c.091.037.146.157.29.322H98.8l-.053-.138,1.222-.68a9.565,9.565,0,0,1-2.793-5.293" transform="translate(-46.605 -58.853)" fill="#fff"></path>
+                                <path id="Path_13229" data-name="Path 13229" d="M348.908,122.831c6.64-.014,10.479-6.48,7.4-11.626a5.562,5.562,0,0,0-3.73-3.072c-.605-.111-1.143-.568-1.749-.69a2.817,2.817,0,0,0-2.128.065c-.488.27-1.244.031-1.818.209a7.641,7.641,0,0,0-4.2,3.3c-.106.164-.026.438-.121.616-.151.28-.465.5-.552.784a10.481,10.481,0,0,0-.479,2.181,6.743,6.743,0,0,0,.179,2,7.784,7.784,0,0,0,.733,2.057,7.589,7.589,0,0,0,6.465,4.177m.5,1.072a8.837,8.837,0,1,1,9.074-8.714,8.947,8.947,0,0,1-9.074,8.714" transform="translate(-188.73 -58.896)" fill="#fff"></path>
+                                <path id="Path_13230" data-name="Path 13230" d="M40.873,40.414c-1.262,0-2.525-.013-3.787.007-.457.007-.618-.152-.636-.605a4.464,4.464,0,0,1,8.692-1.7c.031.088.066.176.088.266.436,1.744.212,2.032-1.571,2.032H40.873" transform="translate(-20.206 -19.428)" fill="#fff"></path>
+                                <path id="Path_13231" data-name="Path 13231" d="M151.3,50.586a16.489,16.489,0,0,1,1.783.794c.549.321,1.014.774,1.533,1.145.338.241.4.463.127.8-1.007,1.242-1.988,2.5-3,3.74-.116.142-.48.293-.553.234-.954-.783-2.175-1.3-2.693-2.531a3.093,3.093,0,0,1,2.806-4.187" transform="translate(-82.2 -28.045)" fill="#fff"></path>
+                                <path id="Path_13232" data-name="Path 13232" d="M224.37,30.92c-1.352.453-2.61.876-3.87,1.3q-1.727.573-3.458,1.138c-.36.118-.7.2-.852-.3s.174-.613.534-.732c1.876-.618,3.744-1.255,5.63-1.843.528-.165.623-.4.426-.867s-.348-.969-.533-1.449a.788.788,0,0,1,.257-.991q2.092-1.811,4.143-3.668c.321-.289.546-.355.877.012s.11.566-.152.8c-1.17,1.033-2.326,2.08-3.511,3.1a.846.846,0,0,0-.321,1.139c.32.724.53,1.493.831,2.372" transform="translate(-119.837 -12.896)" fill="#fff"></path>
+                                <path id="Path_13233" data-name="Path 13233" d="M131.375,137.069a1.582,1.582,0,1,0-1.593,1.555,1.574,1.574,0,0,0,1.593-1.555m1.507,2.187c-.389.584-.7.939-1.267.322a.777.777,0,0,0-.695-.087,3.107,3.107,0,0,1-3.153-.537,3.02,3.02,0,0,1-.595-2.706.841.841,0,0,0-.212-1.264c-.6-.506-.573-.776-.011-1.048.17-.082.587-.027.65.09a1.092,1.092,0,0,0,1.419.473,3.278,3.278,0,0,1,3.116.941c.281.229.256.846.322,1.292a1.732,1.732,0,0,1-.033.832c-.254.673-.27,1.261.459,1.691" transform="translate(-70.144 -74.234)" fill="#fff"></path>
+                                <path id="Path_13234" data-name="Path 13234" d="M31.634,127.024c-1.008-.34-1.851-.608-2.678-.92-.136-.051-.246-.28-.285-.446-.289-1.2-.546-2.411-.837-3.611a.781.781,0,0,1,.456-1.025c.53-.261,1.026-.588,1.542-.877.625-.352.781-.3.889.4.248,1.59.458,3.186.682,4.78.067.481.131.962.231,1.7" transform="translate(-15.407 -66.491)" fill="#fff"></path>
+                                <path id="Path_13235" data-name="Path 13235" d="M24.153,153.118a2.037,2.037,0,0,0,.623-.206,27.222,27.222,0,0,1,2.955-2.271,6.851,6.851,0,0,1,2.452-.48c.113-.015.358.306.393.5.1.523.1,1.063.165,1.592.048.368.146.729.233,1.148H24.442l-.289-.28" transform="translate(-13.391 -83.25)" fill="#fff"></path>
+                                <path id="Path_13236" data-name="Path 13236" d="M141.035,50.708a19.542,19.542,0,0,1-2.887.138c-.691-.061-.312-.721-.244-1.088a.614.614,0,0,1,.955-.491c.753.385,1.482.815,2.221,1.226-.016.071-.03.143-.045.215" transform="translate(-76.364 -27.259)" fill="#fff"></path>
+                                <path id="Path_13237" data-name="Path 13237" d="M215.659,77.306c1.479.178,3.284.368,5.079.622a3.281,3.281,0,0,0,2.2-.332c1.136-.641,2.325-1.19,3.475-1.807.366-.2.6-.2.814.179s.053.586-.3.766c-1.314.664-2.6,1.4-3.939,2a3.76,3.76,0,0,1-1.785.275c-1.711-.146-3.417-.37-5.116-.619-.665-.1-.961.123-1.105.733-.163.682-.423,1.341-.583,2.024-.545,2.318-2.117,3.463-4.41,3.935-2.238.46-4.468.981-6.661,1.612a8.719,8.719,0,0,0-2.4,1.333.648.648,0,0,1-.93-.115c-.083-.076.012-.478.147-.625a7.363,7.363,0,0,1,3.821-1.937q2.944-.746,5.925-1.342a3.944,3.944,0,0,0,3.428-3.043c.229-.93.548-1.839.787-2.767.212-.82.363-.956,1.553-.892" transform="translate(-110.863 -41.945)"></path>
+                                <path id="Path_13238" data-name="Path 13238" d="M142.786,84.886a7.531,7.531,0,0,1,4.794-1.975,23.834,23.834,0,0,1,6.4.589c3.138.58,6.244,1.387,9.479,1.252.419-.018.536.188.555.547.023.415-.2.543-.57.516-1.616-.118-3.247-.142-4.844-.377-2.617-.386-5.2-.971-7.821-1.356-2.45-.36-4.865-.291-6.969,1.3-.578.436-.687-.191-1.021-.493" transform="translate(-79.162 -45.939)"></path>
+                                <path id="Path_13239" data-name="Path 13239" d="M49.362,83.715a4.868,4.868,0,0,1,.424-1.2,13.154,13.154,0,0,1,1.425-1.833.7.7,0,0,1,.684-.042.682.682,0,0,1,.135.665,14.943,14.943,0,0,1-1.02,1.346c-.922,1.2-.706,2.246.648,2.923A3.232,3.232,0,0,1,53.47,87.7c.064.247-.042.735-.2.8-.415.168-.742,0-.848-.531a2.191,2.191,0,0,0-1.372-1.508,2.847,2.847,0,0,1-1.686-2.751" transform="translate(-27.367 -44.671)"></path>
+                                <path id="Path_13240" data-name="Path 13240" d="M280.218,65.024c1.095,0,2.189,0,3.283,0,.386,0,.793-.036.787.542-.005.539-.387.5-.746.5q-3.355,0-6.71,0c-.354,0-.726.049-.735-.5-.009-.589.381-.545.767-.545q1.677,0,3.355,0" transform="translate(-153.07 -36.049)"></path>
+                                <path id="Path_13241" data-name="Path 13241" d="M92.024,113.339a.749.749,0,0,0-.855-.752.7.7,0,0,0-.71.8.706.706,0,0,0,.767.745.746.746,0,0,0,.8-.79m.015,5.667c-.2-.139-.478-.47-.8-.516-.489-.07-.8.279-.786.779a.71.71,0,0,0,.763.757c.512,0,.767-.308.818-1.021m6.01.007c-.2-.139-.467-.47-.784-.523a.652.652,0,0,0-.787.76,1.169,1.169,0,0,0,.745.748c.487.111.767-.262.827-.985m-1.041-4.85c.724-.069,1.018-.321,1.014-.829a.7.7,0,0,0-.767-.747c-.506-.008-.855.319-.781.79.048.312.387.582.534.786m-2.085,10.015c-3.785-.153-6.243-1.544-7.682-4.4a7.182,7.182,0,0,1,.847-8.172,7.926,7.926,0,0,1,14.059,3.6,1.144,1.144,0,0,1-.321.887A8.972,8.972,0,0,0,98.4,122.5a1.14,1.14,0,0,1-.592.821c-1.106.393-2.251.68-2.883.862" transform="translate(-47.869 -60.196)"></path>
+                                <path id="Path_13242" data-name="Path 13242" d="M348.425,114.775a1.966,1.966,0,0,1-.11.6,2.663,2.663,0,0,0,.405,2.939,1.21,1.21,0,0,0,.807.589c.443.1.815.286.74.847-.051.385.139.545.538.545s.579-.162.535-.546c-.049-.438.146-.656.566-.835a2.61,2.61,0,0,0,1.56-2.539c-.025-.943-.686-1.547-1.16-2.255-1.038.085-1-.584-.946-1.282.032-.408-.237-.51-.6-.5-.377.007-.547.139-.536.553.01.346,0,.838-.21,1.015a8.8,8.8,0,0,1-1.591.871m1.848,9.338a7.586,7.586,0,0,1-6.464-4.177,7.781,7.781,0,0,1-.733-2.057,6.728,6.728,0,0,1-.179-2,10.532,10.532,0,0,1,.479-2.181c.088-.289.4-.5.553-.784.095-.178.015-.452.121-.616a7.642,7.642,0,0,1,4.2-3.3c.575-.179,1.331.061,1.819-.209a2.817,2.817,0,0,1,2.128-.065c.606.121,1.144.579,1.749.69a5.564,5.564,0,0,1,3.731,3.072c3.075,5.147-.763,11.613-7.4,11.626" transform="translate(-190.096 -60.178)"></path>
+                                <path id="Path_13243" data-name="Path 13243" d="M133.479,139.051a1.582,1.582,0,1,1-1.569-1.579,1.577,1.577,0,0,1,1.569,1.579" transform="translate(-72.248 -76.216)"></path>
+                                <path id="Path_13244" data-name="Path 13244" d="M109.6,119.154c-.147-.2-.486-.473-.534-.786-.074-.471.275-.8.781-.79a.7.7,0,0,1,.767.747c0,.507-.29.759-1.014.829" transform="translate(-60.461 -65.186)" fill="#fff"></path>
+                                <path id="Path_13245" data-name="Path 13245" d="M110.643,131.336c-.06.722-.339,1.095-.827.985a1.172,1.172,0,0,1-.744-.749.651.651,0,0,1,.786-.759c.317.052.587.383.784.523" transform="translate(-60.464 -72.518)" fill="#fff"></path>
+                                <path id="Path_13246" data-name="Path 13246" d="M97.157,131.33c-.051.713-.306,1.023-.818,1.021a.709.709,0,0,1-.763-.757c-.011-.5.3-.849.786-.78.317.046.593.376.8.515" transform="translate(-52.988 -72.52)" fill="#fff"></path>
+                                <path id="Path_13247" data-name="Path 13247" d="M97.142,118.325a.745.745,0,0,1-.8.79.705.705,0,0,1-.767-.746.7.7,0,0,1,.71-.8.749.749,0,0,1,.855.752" transform="translate(-52.988 -65.182)" fill="#fff"></path>
+                                <path id="Path_13248" data-name="Path 13248" d="M355.564,121.237a1.6,1.6,0,0,0,3.2,0,1.652,1.652,0,0,0-1.6-1.582,1.627,1.627,0,0,0-1.6,1.577m-.739-1.745a8.839,8.839,0,0,0,1.591-.871c.214-.177.221-.669.21-1.016-.012-.414.159-.545.536-.553.361-.007.629.094.6.5-.053.7-.092,1.366.946,1.281.473.708,1.134,1.312,1.159,2.255a2.608,2.608,0,0,1-1.561,2.539c-.42.178-.614.4-.565.835.043.385-.135.548-.536.547s-.589-.16-.538-.545c.075-.561-.3-.745-.74-.848a1.2,1.2,0,0,1-.807-.588,2.662,2.662,0,0,1-.405-2.939,1.972,1.972,0,0,0,.11-.6" transform="translate(-196.496 -64.895)" fill="#fff"></path>
+                                <path id="Path_13249" data-name="Path 13249" d="M356.982,124.482a1.626,1.626,0,0,1,1.6-1.577,1.65,1.65,0,0,1,1.6,1.581,1.6,1.6,0,0,1-3.2,0" transform="translate(-197.914 -68.14)"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h2>Need a <span class="text--light">quote?</span></h2>
+                <div><a href="javascript:void(0);" class="btn">Retrieve quote</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- End quote section -->
+
+    <!-- footer -->
+    <footer class="bg--black text--light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 mt-sm-5 pt-sm-3">
+                    <div class="d-flex align-items-center mb-4 mb-sm-5 pb-3 pb-sm-2">
+                        <h2 class="section-large-title mb-0 me-sm-5 pe-sm-1">Let's chat</h2>
+                        <ul class="d-none d-lg-flex justify-content-start justify-content-md-end social-media p-0 m-0">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="facebook align--center text--light transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.318" height="22.108" viewBox="0 0 10.318 22.108">
+                                        <path id="Path_3" data-name="Path 3" d="M965.033,511.5v3.043H962.8v3.722h2.23v11.061h4.581v-11.06h3.074s.288-1.785.428-3.736h-3.484v-2.545a1.08,1.08,0,0,1,.993-.891h2.5v-3.875h-3.394c-4.806,0-4.693,3.726-4.693,4.282Zm0,0" transform="translate(-962.803 -507.219)" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="twitter align--center text--light transition">
+                                    <svg id="Group_176" data-name="Group 176" xmlns="http://www.w3.org/2000/svg" width="25.982" height="21.105" viewBox="0 0 25.982 21.105">
+                                        <path id="Path_7" data-name="Path 7" d="M1040.821,510.8a10.654,10.654,0,0,1-3.061.842,5.369,5.369,0,0,0,2.346-2.951,10.627,10.627,0,0,1-3.394,1.293,5.328,5.328,0,0,0-9.213,3.647,5.542,5.542,0,0,0,.136,1.214,15.132,15.132,0,0,1-10.989-5.568,5.33,5.33,0,0,0,1.648,7.112,5.25,5.25,0,0,1-2.409-.665v.065a5.344,5.344,0,0,0,4.272,5.233,5.5,5.5,0,0,1-1.4.18,5.382,5.382,0,0,1-1.007-.093,5.349,5.349,0,0,0,4.979,3.7,10.714,10.714,0,0,1-6.621,2.275,11.416,11.416,0,0,1-1.269-.071,15.159,15.159,0,0,0,23.333-12.765l-.016-.69a10.744,10.744,0,0,0,2.665-2.76Zm0,0" transform="translate(-1014.839 -508.301)" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="instagram align--center text--light transition">
+                                    <svg id="Group_175" data-name="Group 175" xmlns="http://www.w3.org/2000/svg" width="21.435" height="21.435" viewBox="0 0 21.435 21.435">
+                                        <path id="Path_4" data-name="Path 4" d="M1112.711,507.945h-9.6a5.922,5.922,0,0,0-5.915,5.915v9.6a5.921,5.921,0,0,0,5.915,5.915h9.6a5.922,5.922,0,0,0,5.916-5.915v-9.6a5.922,5.922,0,0,0-5.916-5.915Zm4.014,15.52a4.018,4.018,0,0,1-4.014,4.014h-9.6a4.018,4.018,0,0,1-4.013-4.014v-9.6a4.017,4.017,0,0,1,4.013-4.013h9.6a4.018,4.018,0,0,1,4.014,4.013Zm0,0" transform="translate(-1097.191 -507.945)" fill="currentColor" />
+                                        <path id="Path_5" data-name="Path 5" d="M1113.925,519.157a5.523,5.523,0,1,0,5.524,5.523,5.529,5.529,0,0,0-5.524-5.523Zm0,9.144a3.621,3.621,0,1,1,3.622-3.621,3.626,3.626,0,0,1-3.622,3.621Zm0,0" transform="translate(-1103.208 -513.962)" fill="currentColor" />
+                                        <path id="Path_6" data-name="Path 6" d="M1131.129,515.676a1.395,1.395,0,1,0,.986.408,1.4,1.4,0,0,0-.986-.408Zm0,0" transform="translate(-1114.656 -512.094)" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank" class="youtube align--center text--light transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.999" height="18" viewBox="0 0 26.999 18">
+                                        <path id="Subtraction_57" data-name="Subtraction 57" d="M-1952,12130h-15a6.007,6.007,0,0,1-6-6v-6a6.007,6.007,0,0,1,6-6h15a6.007,6.007,0,0,1,6,6v6A6.007,6.007,0,0,1-1952,12130Zm-10.5-13.5h0v9l7.142-4.5-7.142-4.5Z" transform="translate(1972.999 -12112.001)" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-icon d-flex flex-wrap">
+                        <a href="tel:01234567890" class="call d-flex flex-column">
+                            <h3 class="text--light lh-1 mb-3">Call us</h3>
+                            <h5 class="text--light bodyL fw-normal lh-1 mb-0">01234 567890</h5>
+                        </a>
+                        <a href="mailto:hello@insuremystuff4less.com" class="email d-flex flex-column">
+                            <h3 class="text--light lh-1 mb-3">Email us</h3>
+                            <h5 class="text--light bodyL fw-normal lh-1 mb-0">hello@insuremystuff4less.com</h5>
+                        </a>
+                    </div>
+                    <ul class="d-flex d-lg-none social-media p-0 pb-1 pt-3 mb-5 mt-4">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="facebook align--center text--light transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.318" height="22.108" viewBox="0 0 10.318 22.108">
+                                    <path id="Path_3" data-name="Path 3" d="M965.033,511.5v3.043H962.8v3.722h2.23v11.061h4.581v-11.06h3.074s.288-1.785.428-3.736h-3.484v-2.545a1.08,1.08,0,0,1,.993-.891h2.5v-3.875h-3.394c-4.806,0-4.693,3.726-4.693,4.282Zm0,0" transform="translate(-962.803 -507.219)" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="twitter align--center text--light transition">
+                                <svg id="Group_176" data-name="Group 176" xmlns="http://www.w3.org/2000/svg" width="25.982" height="21.105" viewBox="0 0 25.982 21.105">
+                                    <path id="Path_7" data-name="Path 7" d="M1040.821,510.8a10.654,10.654,0,0,1-3.061.842,5.369,5.369,0,0,0,2.346-2.951,10.627,10.627,0,0,1-3.394,1.293,5.328,5.328,0,0,0-9.213,3.647,5.542,5.542,0,0,0,.136,1.214,15.132,15.132,0,0,1-10.989-5.568,5.33,5.33,0,0,0,1.648,7.112,5.25,5.25,0,0,1-2.409-.665v.065a5.344,5.344,0,0,0,4.272,5.233,5.5,5.5,0,0,1-1.4.18,5.382,5.382,0,0,1-1.007-.093,5.349,5.349,0,0,0,4.979,3.7,10.714,10.714,0,0,1-6.621,2.275,11.416,11.416,0,0,1-1.269-.071,15.159,15.159,0,0,0,23.333-12.765l-.016-.69a10.744,10.744,0,0,0,2.665-2.76Zm0,0" transform="translate(-1014.839 -508.301)" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="instagram align--center text--light transition">
+                                <svg id="Group_175" data-name="Group 175" xmlns="http://www.w3.org/2000/svg" width="21.435" height="21.435" viewBox="0 0 21.435 21.435">
+                                    <path id="Path_4" data-name="Path 4" d="M1112.711,507.945h-9.6a5.922,5.922,0,0,0-5.915,5.915v9.6a5.921,5.921,0,0,0,5.915,5.915h9.6a5.922,5.922,0,0,0,5.916-5.915v-9.6a5.922,5.922,0,0,0-5.916-5.915Zm4.014,15.52a4.018,4.018,0,0,1-4.014,4.014h-9.6a4.018,4.018,0,0,1-4.013-4.014v-9.6a4.017,4.017,0,0,1,4.013-4.013h9.6a4.018,4.018,0,0,1,4.014,4.013Zm0,0" transform="translate(-1097.191 -507.945)" fill="currentColor" />
+                                    <path id="Path_5" data-name="Path 5" d="M1113.925,519.157a5.523,5.523,0,1,0,5.524,5.523,5.529,5.529,0,0,0-5.524-5.523Zm0,9.144a3.621,3.621,0,1,1,3.622-3.621,3.626,3.626,0,0,1-3.622,3.621Zm0,0" transform="translate(-1103.208 -513.962)" fill="currentColor" />
+                                    <path id="Path_6" data-name="Path 6" d="M1131.129,515.676a1.395,1.395,0,1,0,.986.408,1.4,1.4,0,0,0-.986-.408Zm0,0" transform="translate(-1114.656 -512.094)" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank" class="youtube align--center text--light transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.999" height="18" viewBox="0 0 26.999 18">
+                                    <path id="Subtraction_57" data-name="Subtraction 57" d="M-1952,12130h-15a6.007,6.007,0,0,1-6-6v-6a6.007,6.007,0,0,1,6-6h15a6.007,6.007,0,0,1,6,6v6A6.007,6.007,0,0,1-1952,12130Zm-10.5-13.5h0v9l7.142-4.5-7.142-4.5Z" transform="translate(1972.999 -12112.001)" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="newsletter-body py-md-0 mt-0 top-border">
+                        <div class="d-flex align-items-end justify-content-between mb-4 mb-sm-3">
+                            <h4 class="lh-1 mb-0">Sign up to our newsletter?</h4>
+                            <div class="img-content d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="95.336" height="140.037" viewBox="0 0 95.336 140.037">
+                                    <g id="Group_3032" data-name="Group 3032" transform="matrix(0.996, -0.087, 0.087, 0.996, -289.28, -86.551)">
+                                        <path id="Path_12970" data-name="Path 12970" d="M314.05,221.82c-1.044.28-2,.484-2.909.8a2.227,2.227,0,0,0-1.66,1.967,2.042,2.042,0,0,0,1.018,2.17,4.958,4.958,0,0,0,3.9.364c.13-.04.314-.249.3-.358-.195-1.619-.419-3.233-.647-4.94m.233-6.724c-.08-1.12-.2-2.44-.259-3.762-.03-.617-.316-.8-.867-.682-.746.157-1.5.285-2.232.492a3.122,3.122,0,0,0-2.2,3.041,2.965,2.965,0,0,0,2.414,3.036,14.434,14.434,0,0,0,2.692-.042c.4-.016.495-.259.46-.636-.038-.411-.009-.828-.009-1.447m.979-17.632a33.676,33.676,0,0,0-3.39.634,3.6,3.6,0,0,0-1.515,5.728,4.827,4.827,0,0,0,5.1,1.54c.417-.112.565-.263.515-.714-.175-1.523-.3-3.051-.452-4.577-.08-.819-.164-1.638-.263-2.612m.216-7.52c-.127-1.41-.287-3.2-.453-4.993-.036-.391-.193-.667-.652-.658a9.878,9.878,0,0,0-4.792,1.259,3.082,3.082,0,0,0-.508,4.893,5.693,5.693,0,0,0,5.512,1.137c.915-.3.912-.308.893-1.638m-5.154,38.7c.007-.067.013-.133.019-.2-.372-.318-.771-.61-1.111-.96a3.7,3.7,0,0,1,1.287-6.2,19.746,19.746,0,0,1,3.655-.9,1.157,1.157,0,0,1,1.453,1.138c.065.472.08.95.142,1.422.142,1.088.287,2.176.453,3.259.05.324.162.6.619.417a3.5,3.5,0,0,0,2.239-3.815,7.563,7.563,0,0,0-.338-1.384,3.976,3.976,0,0,0-4.358-2.809q-2.273.263-4.537.625c-2.279.37-4.538.917-6.831,1.151-3.506.356-7.032.514-10.552.749a1.456,1.456,0,0,0-1.544,1.17,12.3,12.3,0,0,0-.4,1.755,5.1,5.1,0,0,0,3.064,5.364,11.544,11.544,0,0,0,5.47.746c2.194-.238,4.381-.538,6.568-.834,1.568-.212,3.132-.461,4.7-.694m-1.109-10.528c-.413-.518-.716-.881-1-1.259-1.689-2.25-.966-5.733,1.578-6.782a19.185,19.185,0,0,1,4.4-.92c.656-.1,1.033.269,1.159.955a14.72,14.72,0,0,1,.169,1.792c.086,1.485.155,2.972.232,4.466a6.353,6.353,0,0,0,2.9-1.666,2.6,2.6,0,0,0,.564-.8,5.3,5.3,0,0,0-1.707-6.244,3,3,0,0,0-2.259-.646c-2.131.245-4.263.493-6.4.7a139.639,139.639,0,0,1-17.241.832,13.349,13.349,0,0,1-4.4-.6c-.957-.356-1.187-.253-1.64.684a9.827,9.827,0,0,0-.892,5.08,5.623,5.623,0,0,0,3.866,5.184,10.368,10.368,0,0,0,4.735.671c4.238-.31,8.47-.714,12.7-1.092,1.02-.091,2.038-.226,3.227-.36m8.282-13.446a4.154,4.154,0,0,0,.441,0c2.295-.286,3.641-2.1,3.465-4.633a6.9,6.9,0,0,0-5.055-6.574,5.464,5.464,0,0,0-2.175-.254c-2.1.195-4.177.536-6.27.753a62.6,62.6,0,0,1-11.3.559c-2.221-.172-4.443-.34-6.663-.54a7.7,7.7,0,0,1-3.9-1.266.61.61,0,0,0-.927.153,17.167,17.167,0,0,0-1.533,2.519,10.886,10.886,0,0,0-.224,6.962,4.83,4.83,0,0,0,2.364,3.361,10.758,10.758,0,0,0,5.467,1.382q7.669-.3,15.336-.679c1.307-.064,2.609-.227,4.1-.361-.438-.409-.742-.676-1.028-.961a5.167,5.167,0,0,1-1.275-5.286,4.215,4.215,0,0,1,3.579-3.2c1.113-.213,2.241-.364,3.369-.488.943-.1,1.281.189,1.393,1.144.134,1.154.218,2.312.347,3.464.148,1.313.322,2.622.487,3.948m2.089,21.867c.293-.021.538-.026.781-.055,4.3-.533,8.6-1.044,12.9-1.61,7.43-.977,14.819-2.192,22.143-3.8a5.508,5.508,0,0,0,3.572-2.433,29.963,29.963,0,0,0,4.217-10.75,58.811,58.811,0,0,0,1.02-13.787,55.815,55.815,0,0,0-2.878-16.526,26.344,26.344,0,0,0-4.958-9.243,1.46,1.46,0,0,0-1.219-.576c-1.258.023-2.52.05-3.775-.024-2.182-.129-4.36-.323-6.537-.509a10.523,10.523,0,0,1-5.6-2.093,14.244,14.244,0,0,1-4.537-6.91,43.316,43.316,0,0,1-2.283-13.425c-.118-4.64-.2-9.281-.284-13.921a19.934,19.934,0,0,0-1.535-7.38,4.466,4.466,0,0,0-3.488-2.939,5.911,5.911,0,0,0-3.8.184,10.49,10.49,0,0,0-3.221,2.024,14.851,14.851,0,0,0-3.687,6.119,60.128,60.128,0,0,0-1.856,8.291,155.386,155.386,0,0,0-1.19,19.1c-.051,3.251.109,6.5.19,9.756.047,1.923-.1,2.037-2.033,2.267-5.265.628-10.53,1.261-15.782,1.989-1.935.269-3.823.874-5.754,1.194a6.226,6.226,0,0,0-2.821,1.163c-.461.349-.924.7-1.393,1.036-3.793,2.751-5.687,9.418-3.294,13.588a9.254,9.254,0,0,0,2.335,3.094c.544.4,1.219.617,1.761,1.016a6.222,6.222,0,0,0,3.286,1.15q4.617.379,9.235.751a2.378,2.378,0,0,0,.37-.022c2-.155,3.993-.3,5.987-.472,1.243-.107,2.481-.261,3.721-.393a.754.754,0,0,0-.335-.423,4.559,4.559,0,0,1-1.9-5.179,4.855,4.855,0,0,1,3.6-3.278,27.121,27.121,0,0,1,4.143-.65c1.066-.112,1.451.237,1.7,1.278a5.387,5.387,0,0,1,.126.735c.127,1.32.244,2.641.367,3.962.039.412.019.96.523.991a1.45,1.45,0,0,0,.987-.544,5.768,5.768,0,0,0,.987-5.518,5.952,5.952,0,0,0-4.719-4.267,28.025,28.025,0,0,0-6.881-.645,62.5,62.5,0,0,0-11.465.86c-.682.126-1.374.193-2.047.286-.305-1.044-.176-1.3.784-1.468,1.626-.285,3.249-.631,4.89-.774,2.732-.238,5.477-.309,8.214-.5a19.1,19.1,0,0,1,8.237,1.371,7.448,7.448,0,0,1,2.24,12.519c-.413.364-.828.725-1.288,1.128.207.122.349.2.482.283a19.213,19.213,0,0,1,2.564,1.716,8.045,8.045,0,0,1,2.472,6.7,5.208,5.208,0,0,1-3.588,4.951c-.3.115-.594.246-1.036.431a7.353,7.353,0,0,1,2.857,5.97c-.116,2.569-1.61,4.109-3.765,5.164,3.127,2.464,4.344,5.306,2.262,9.055m-29.918-5.665c-.694-.306-1.5-.666-2.315-1.021a6.523,6.523,0,0,1-4.18-6.487,11.151,11.151,0,0,1,1.31-5.733.733.733,0,0,0-.208-1.087c-1.919-1.646-2.555-3.878-2.822-6.295a11.163,11.163,0,0,1,2.536-8.408c-.209-.251-.415-.524-.645-.774a11.659,11.659,0,0,1-2.892-4.941A12.734,12.734,0,0,1,283.1,174.3a14.65,14.65,0,0,1,8.806-4.911,127.858,127.858,0,0,1,14.592-2c1.521-.132,3.039-.306,4.554-.5,1.007-.126,1.094-.271,1.076-1.272-.059-3.233-.223-6.468-.138-9.7.126-4.742.4-9.481.67-14.217a57.254,57.254,0,0,1,1.721-11.351,23.73,23.73,0,0,1,2.411-5.709,14.189,14.189,0,0,1,4.076-4.368,7.808,7.808,0,0,1,6.785-1.082,5.518,5.518,0,0,1,4.053,3.22,22.883,22.883,0,0,1,1.79,6.761c.479,3.972.123,7.951.24,11.926.124,4.249.175,8.515,1.255,12.653a40.083,40.083,0,0,0,2.22,6.509,8.981,8.981,0,0,0,5.946,5.053,30.633,30.633,0,0,0,8.326,1.029c1.259.011,2.518,0,3.778-.013a3.238,3.238,0,0,1,2.827,1.315,31.749,31.749,0,0,1,4.968,9.952,61.387,61.387,0,0,1,2.744,17.562,52.456,52.456,0,0,1-2.668,18.229,24.887,24.887,0,0,1-3.938,7.082,4.772,4.772,0,0,1-2.7,1.815c-5.372,1.376-10.849,2.185-16.311,3.029-6.913,1.069-13.853,1.954-20.794,2.833a54.21,54.21,0,0,0-5.988,1.264,74.226,74.226,0,0,1-10.346,1.867,31.451,31.451,0,0,1-5.48.417,13.156,13.156,0,0,1-5.354-1.384,6.312,6.312,0,0,1-3.148-6.215c.151-1.056.391-2.1.605-3.23" transform="translate(0 0)" fill="#fefaf5" />
+                                        <path id="Path_12971" data-name="Path 12971" d="M330.125,295.8c-6.923-.042-13.846-.166-20.742-.827a50.7,50.7,0,0,1-10.925-1.927,9.2,9.2,0,0,1-2.168-1.027,1.255,1.255,0,0,1-.051-2.255,9.628,9.628,0,0,1,2.358-1.183,45.165,45.165,0,0,1,9.115-1.833,171.719,171.719,0,0,1,24.211-.953c5.821.1,11.642.37,17.45.738a67.179,67.179,0,0,1,13.805,2.046,12.217,12.217,0,0,1,2.79,1.151c1.341.77,1.3,1.7-.051,2.457a13.755,13.755,0,0,1-4.878,1.561c-3.774.512-7.552,1.066-11.348,1.313-6.511.422-13.037.621-19.558.913,0-.058-.005-.116-.008-.175" transform="translate(-4.292 -43.038)" fill="#fefaf5" />
+                                        <path id="Path_12972" data-name="Path 12972" d="M335.4,141.885a4.7,4.7,0,0,1-4.689-3.6,10.879,10.879,0,0,1-.335-1.287,1.733,1.733,0,0,1,.035-.882.79.79,0,0,1,.571-.411c.162-.011.4.23.5.414a2.351,2.351,0,0,1,.159.7c.053.277.086.559.156.831a3.471,3.471,0,0,0,4.93,2.577,7.863,7.863,0,0,0,3.623-3.27,3.075,3.075,0,0,1,.635-.793.754.754,0,0,1,.69.015.659.659,0,0,1,.175.617c-1.253,2.727-3.178,4.643-6.29,5.076a.925.925,0,0,1-.16.009" transform="translate(-12.927 -4.635)" fill="#fefaf5" />
+                                        <path id="Path_12973" data-name="Path 12973" d="M336.94,129.694a2.012,2.012,0,0,1-1,1.65.785.785,0,0,1-1.288-.527,3.143,3.143,0,0,1,.4-2.258.859.859,0,0,1,1.1-.361c.546.167.8.592.777,1.5" transform="translate(-14.133 -2.548)" fill="#fefaf5" />
+                                        <path id="Path_12974" data-name="Path 12974" d="M339.979,130.629c.15-.411.273-.834.457-1.229a.916.916,0,0,1,1.14-.561c.557.143.986.477.968,1.08a3.465,3.465,0,0,1-.33,1.325,1.1,1.1,0,0,1-1.34.671c-.535-.13-.816-.562-.895-1.285" transform="translate(-15.527 -2.731)" fill="#fefaf5" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="newsletter d-flex position-relative">
+                                <input type="email" class="text-input text--light bodyL w-100 border-0 lh-1" placeholder="Your email address…">
+                                <button type="submit" class="bg-black align--center border-0 position-absolute top-50 end-0 translate-middle-y p-0 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.921" height="15.166" viewBox="0 0 13.921 15.166">
+                                        <path id="Path_13303" data-name="Path 13303" d="M7.257,3.1a2,2,0,0,1,3.486,0l5.58,9.921A2,2,0,0,1,14.58,16H3.42a2,2,0,0,1-1.743-2.981Z" transform="translate(16 -1.417) rotate(90)" fill="#fdfaf6" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom footer -->
+            <div class="bottom-footer mt-5 pt-1 pt-sm-2">
+                <ul class="d-flex flex-wrap align-items-center justify-content-sm-end text m-0 p-0">
+                    <li class="lh-1"><a href="guides.html" class="text--light bodyS transition lh-1 d-inline-block">Guides</a></li>
+                    <li class="lh-1"><a href="FAQs.html" class="text--light bodyS transition lh-1 d-inline-block">FAQs</a></li>
+                    <li class="lh-1"><a href="careers.html" class="text--light bodyS transition lh-1 d-inline-block">Careers</a></li>
+                    <li class="lh-1"><a href="privacy_policy.html" class="text--light bodyS transition lh-1 d-inline-block">Privacy Policy</a></li>
+                    <li class="lh-1"><a href="javascript:void(0);" class="text--light bodyS transition lh-1 d-inline-block">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <!-- End bottom footer -->
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

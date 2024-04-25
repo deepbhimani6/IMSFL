@@ -1,0 +1,1617 @@
+// home page
+
+.hero-content {
+  padding: 298px 0 185px;
+  p {
+    @include generate-fontsize(22px);
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 286px 0 90px;
+    p {
+      @include generate-fontsize(20px);
+      line-height: 1.3 !important;
+    }
+  }
+}
+
+.banner-theme-section {
+  margin-top: -128px;
+}
+
+.offer-section {
+  padding-bottom: 70px;
+  .row {
+    --bs-gutter-x: 14px;
+    @include media-breakpoint-down(sm) {
+      --bs-gutter-x: 10px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 102px 0 86px;
+  }
+}
+
+.choose-section {
+  padding: 144px 0 142px;
+  .btn {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 116px;
+  }
+}
+.choose-section-header {
+  padding-bottom: 104px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 36px;
+  }
+}
+.choose-content {
+  @include media-breakpoint-down(sm) {
+    margin-right: -36px !important;
+  }
+}
+.choose-card {
+  @include media-breakpoint-down(xl) {
+    width: 370px;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 240px;
+  }
+  .img-content {
+    height: 212px;
+    @include media-breakpoint-down(sm) {
+      height: 184px;
+    }
+  }
+  .choose-body {
+    p {
+      @include media-breakpoint-down(sm) {
+        @include generate-fontsize(25px);
+        line-height: 1.1 !important;
+      }
+    }
+  }
+}
+
+.testimonial-section {
+  @include media-breakpoint-down(sm) {
+    .container-sm {
+      padding: 0;
+    }
+  }
+}
+.testimonial-content {
+  .img-content {
+    padding-right: 70px;
+    @include media-breakpoint-down(xl) {
+      padding-right: 10px;
+    }
+    @include media-breakpoint-down(md) {
+      position: static !important;
+      padding-right: 0;
+      img {
+        object-position: top;
+      }
+    }
+  }
+  .testimonial-body {
+    .btn {
+      border-color: $light;
+      color: $light;
+    }
+    @include media-breakpoint-down(md) {
+      p {
+        @include generate-fontsize(35px);
+        span {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.logos-section {
+  padding: 142px 0 155px;
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 115px;
+  }
+}
+
+.articles-section {
+  padding: 155px 0 144px;
+  background: linear-gradient(#b993f4, #f5bf64);
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 48px;
+  }
+}
+.articles-section-header {
+  @include media-breakpoint-down(sm) {
+    .section-large-title {
+      @include generate-fontsize(46px);
+    }
+  }
+  .btn {
+    padding-right: 68px;
+    padding-left: 68px;
+  }
+}
+.btn-data-overflow {
+  a.btn {
+    padding: 6px 19px;
+    &.active {
+      color: $white;
+      background-color: $black;
+      border-color: transparent;
+    }
+    color: $black;
+    background-color: transparent;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-right: -36px;
+  }
+}
+.articles-card-content {
+  .row {
+    --bs-gutter-x: 64px;
+    @include media-breakpoint-down(xl) {
+      --bs-gutter-x: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: -36px;
+    }
+    > * {
+      @include media-breakpoint-down(xl) {
+        width: 318px;
+        margin-right: 12px;
+      }
+    }
+  }
+  > .btn-link {
+    a.btn {
+      padding: 22px 68px 20px;
+    }
+  }
+}
+
+// End home page
+
+// about us page
+
+.about-us-hero-content {
+  padding: 230px 0 154px;
+  .btn {
+    padding: 22px 52px 20px;
+  }
+  .img-with-text {
+    line-height: 0.7;
+    .img-content {
+      margin: 0px -50px 0 -32px;
+      transform: translateY(18px);
+    }
+    @include media-breakpoint-down(md) {
+      span {
+        vertical-align: unset !important;
+      }
+      .img-content {
+        margin: 0px -48px 0 -25px;
+        transform: translateY(-8px);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      line-height: 0.8;
+      .img-content {
+        margin: 0px 0px 0 -15px;
+        transform: translateY(12px);
+      }
+    }
+    .person-img-content {
+      @include media-breakpoint-down(sm) {
+        margin-left: -8px;
+        transform: translateY(8px);
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      @include generate-fontsize(84px);
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 250px 0 114px;
+    .img-with-text {
+      @include generate-fontsize(50px);
+    }
+  }
+}
+
+.mission-section {
+  @include media-breakpoint-down(sm) {
+    .container {
+      padding: 0;
+    }
+  }
+}
+.mission-content {
+  .img-body {
+    @include media-breakpoint-up(lg) {
+      height: 714px;
+    }
+  }
+  .img-content {
+    @include media-breakpoint-down(lg) {
+      position: static !important;
+      height: 440px !important;
+    }
+  }
+}
+.mission-body {
+  .section-large-title {
+    line-height: 1.1;
+  }
+  p {
+    line-height: 1.9;
+    -webkit-line-clamp: 10;
+  }
+  .btn {
+    padding: 22px 52px 20px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 78px 0 104px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 78px 36px 104px;
+  }
+}
+
+.vision-body {
+  @include media-breakpoint-down(lg) {
+    padding: 102px 0 104px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 102px 36px 104px;
+  }
+}
+
+.about-us-logos-section {
+  padding: 144px 0 142px;
+  a.btn {
+    padding: 22px 52px 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 116px;
+  }
+}
+
+.abot-us-offer-section {
+  padding: 142px 0 92px;
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 86px;
+  }
+}
+.about-us-offer-section-header {
+  p {
+    opacity: 35%;
+    @include media-breakpoint-down(sm) {
+      line-height: 1.86;
+    }
+  }
+}
+
+.learn-more-section {
+  padding: 144px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0;
+  }
+}
+.learn-more-content {
+  h2 {
+    @include generate-fontsize(60px);
+    margin: 38px 0;
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(50px);
+    }
+  }
+  a.btn {
+    padding: 22px 52px 20px;
+  }
+}
+
+.FAQs-section {
+  padding: 144px 0 166px;
+  a.btn {
+    padding: 22px 68px 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 138px;
+  }
+}
+.FAQs-section-header {
+  padding-bottom: 100px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 24px;
+  }
+  h2 {
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(45px);
+    }
+  }
+}
+.accordion {
+  .accordion-item {
+    &:last-child {
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+}
+.FAQs-accordion {
+  .accordion-header {
+    padding: 45px 0 42px;
+    .accordion-button {
+      padding: 0;
+      @include generate-fontsize(30px);
+      @include media-breakpoint-down(sm) {
+        @include generate-fontsize(25px);
+        line-height: 1.4;
+      }
+      &[aria-expanded="true"] {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+      &::after {
+        background-image: url("../images/icon/round-chevron-down.svg");
+        width: $headingS;
+        height: $headingS;
+        background-size: unset;
+      }
+    }
+  }
+  .accordion-body {
+    padding-bottom: 42px;
+    p {
+      line-height: 1.78;
+    }
+  }
+}
+
+// End about us page
+
+// motorhome page
+
+.motorhome-hero-section {
+  .pig-img-content {
+    right: calc(0% - 190px);
+    @include media-breakpoint-down(xl) {
+      right: calc(0% - 310px);
+    }
+    @include media-breakpoint-down(lg) {
+      top: auto !important;
+      bottom: 74px;
+      right: calc(0% - 360px);
+      transform: none !important;
+    }
+    @include media-breakpoint-down(md) {
+      height: 418px;
+      bottom: 95px;
+      right: calc(0% - 240px);
+    }
+    @include media-breakpoint-down(sm) {
+      bottom: 120px;
+    }
+  }
+}
+.motorhome-hero-content {
+  h5 {
+    @include generate-fontsize(22px);
+  }
+  h1 {
+    @include generate-fontsize(80px);
+    line-height: 0.92;
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(50px);
+      line-height: 1.05;
+    }
+  }
+}
+
+.fixed-menu-section {
+  padding: $menuSize 0 $bodyXS;
+  background-color: rgb(24, 36, 42);
+  @include media-breakpoint-down(lg) {
+    padding: $headingXS 0;
+  }
+  ul {
+    li {
+      margin-right: 42px;
+      &:last-child {
+        margin: 0;
+      }
+      a {
+        color: $light;
+        &:before {
+          background-color: $light;
+        }
+      }
+      @include media-breakpoint-down(xxl) {
+        margin-right: 20px;
+      }
+      @include media-breakpoint-down(xl) {
+        a {
+          @include generate-fontsize($bodyXS);
+        }
+      }
+    }
+  }
+  a.btn {
+    @include generate-fontsize($bodyS);
+    border-radius: $menuSize;
+    &:hover {
+      border-color: $primary;
+      background-color: $primary;
+      color: $white;
+    }
+    &:first-of-type {
+      padding: $bodyXS 25px $menuSize;
+    }
+    &:last-of-type {
+      padding: $bodyXS 20px $menuSize;
+    }
+    @include media-breakpoint-down(lg) {
+      border-radius: 20px;
+      @include generate-fontsize($bodyM);
+      background-color: #292f33;
+      color: $light;
+      &:first-of-type {
+        padding: 20px 30px;
+      }
+      &:last-of-type {
+        padding: 20px;
+      }
+      &:hover {
+        color: $lightBlack;
+      }
+    }
+  }
+}
+
+.protect-benefits-section {
+  padding: 128px 0 144px;
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 0;
+    .container-sm {
+      padding: 0;
+    }
+  }
+}
+.protect-benefits-header {
+  h2 {
+    line-height: 1.1;
+  }
+  p {
+    line-height: 1.66;
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize($buttonSize);
+      line-height: 1.86;
+      opacity: 0.75;
+    }
+  }
+}
+.protect-benefits-slider {
+  .img-content {
+    height: 736px;
+    @include media-breakpoint-down(md) {
+      height: 440px;
+    }
+  }
+}
+
+.motorhome-insurance-section {
+  @include media-breakpoint-down(sm) {
+    .container {
+      padding: 0;
+    }
+  }
+}
+.motorhome-insurance-body {
+  @include media-breakpoint-down(lg) {
+    padding: 102px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 102px 36px;
+  }
+  h3 {
+    @include generate-fontsize(30px);
+  }
+  p {
+    line-height: 1.86;
+  }
+}
+.motorhome-insurance-accordion {
+  .accordion-item {
+    @include media-breakpoint-up(md) {
+      &:first-child {
+        border-top: 1px solid $gray-25;
+      }
+    }
+    border-color: $gray-25 !important;
+  }
+  .accordion-header {
+    padding: $headingS 0 30px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 32px;
+    }
+    .accordion-button {
+      @include generate-fontsize(25px);
+      @include media-breakpoint-down(sm) {
+        line-height: 1.1 !important;
+      }
+    }
+  }
+}
+.motorhome-insurance-img {
+  @include media-breakpoint-up(lg) {
+    height: 946px;
+  }
+  @include media-breakpoint-down(lg) {
+    .img-content {
+      height: 440px !important;
+      position: static !important;
+    }
+  }
+}
+
+.about-motorhome-section {
+  padding: 144px 0;
+  padding: 102px 0 226px;
+  p {
+    line-height: 1.78;
+  }
+  a.btn {
+    &:first-child {
+      padding: 22px 54px 20px;
+    }
+    &:last-child {
+      padding: 22px 52px 20px;
+    }
+  }
+}
+
+.motorhome-FAQs-section {
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 142px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 102px;
+  }
+}
+
+.motorhome-articles-section {
+  @include media-breakpoint-up(sm) {
+    padding-top: 135px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 138px;
+  }
+}
+
+// End motorhome page
+
+// articles page
+
+.articles-page-section {
+  padding: 162px 0 138px;
+  background: linear-gradient($primary, $light);
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 110px;
+    .container-sm {
+      padding: 0;
+    }
+  }
+}
+.articles-page-section-header {
+  margin-bottom: 42px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 38px;
+  }
+}
+.article-featured-card {
+  margin-bottom: 132px;
+  border-radius: $menuSize;
+  h2 {
+    @include media-breakpoint-down(lg) {
+      @include generate-fontsize($headingS);
+    }
+  }
+  .btn-icon {
+    width: 32px;
+    height: 32px;
+    svg {
+      width: 9px;
+      height: $buttonSize;
+    }
+  }
+  .img-content {
+    padding-left: 32px;
+    height: 420px;
+  }
+}
+.articles-page-section {
+  a.learn-more-btn {
+    padding: 22px 50px 20px;
+  }
+}
+.articles-page-newsletter-data {
+  padding: 42px 20px 42px 45px;
+  margin-bottom: 70px;
+  @include media-breakpoint-down(sm) {
+    border-radius: 0;
+    padding: 56px 36px 54px;
+    margin: 52px 0 92px;
+  }
+  h2 {
+    @include generate-fontsize(30px);
+    @include media-breakpoint-down(xxl) {
+      line-height: 1.17 !important;
+      margin-bottom: 34px;
+    }
+  }
+}
+.articles-page-newsletter-input {
+  @include media-breakpoint-up(md) {
+    width: 555px !important;
+  }
+  button {
+    width: $headingXL;
+    height: $headingXL;
+    border-radius: $headingXS;
+  }
+  input {
+    padding: 21px 60px 21px 36px;
+    background-color: #cbabf5;
+    @include generate-placeholder($white, $bodyM);
+  }
+}
+.articles-page-card-content {
+  .row {
+    --bs-gutter-x: 64px;
+    @include media-breakpoint-down(lg) {
+      --bs-gutter-x: 24px;
+    }
+  }
+  .card {
+    margin-bottom: 66px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 35px;
+    }
+  }
+  .card-body {
+    padding: 30px $headingS 24px;
+    @include media-breakpoint-down(sm) {
+      padding: 25px 22px 24px;
+    }
+  }
+}
+
+// End articles page
+
+// article open page
+
+.article-detail-section {
+  padding: 214px 0 228px;
+  @include media-breakpoint-down(sm) {
+    padding: 150px 0 106px;
+  }
+}
+.article-detail-btn-with-icon {
+  margin-bottom: 58px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 38px;
+  }
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+    svg {
+      height: $menuSize;
+    }
+  }
+  &:hover .btn-icon {
+    transform: translateX(-4px);
+  }
+}
+aside {
+  .position-sticky {
+    top: 214px;
+    @include media-breakpoint-down(lg) {
+      position: static !important;
+    }
+  }
+  .link-data {
+    height: 148px;
+    margin-bottom: 228px;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+    @include media-breakpoint-down(lg) {
+      height: auto;
+      margin-bottom: 52px;
+      border: none !important;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: -36px;
+    }
+  }
+  a.link {
+    @include generate-fontsize(17px);
+    line-height: 1.53;
+    color: #18242a80;
+    margin-bottom: $menuSize;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.active {
+      color: $lightBlack;
+      position: relative;
+      padding-left: 8px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 85%;
+        background-color: $black;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      @include generate-fontsize($bodyL);
+      line-height: 1;
+      margin: 0 40px 0 0;
+      color: $black !important;
+      &.active {
+        &::before {
+          width: 3px;
+          height: 100%;
+          top: 0;
+          transform: none;
+        }
+      }
+    }
+  }
+}
+.article-detail-content {
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+  }
+}
+.article-detail-heading {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 36px;
+  }
+  h1 {
+    @include generate-fontsize(60px);
+    line-height: 1.13;
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(50px);
+      margin-bottom: 36px;
+    }
+  }
+  p {
+    line-height: 1.36;
+    @include generate-fontsize(22px);
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(20px);
+      line-height: 1.26;
+    }
+  }
+}
+.article-detail-img {
+  height: 484px;
+  @include media-breakpoint-down(sm) {
+    border-radius: 0;
+    height: 440px;
+    margin: 0 -36px;
+  }
+}
+.sub-section-body {
+  h2 {
+    @include generate-fontsize(30px);
+    line-height: 1.34;
+  }
+  p {
+    line-height: 1.78;
+  }
+  ul {
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+    }
+    li {
+      @include generate-fontsize(17px);
+      line-height: 1.78;
+      position: relative;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $black;
+      }
+    }
+  }
+  .btn-data {
+    @include media-breakpoint-down(sm) {
+      a.btn {
+        width: 100%;
+      }
+    }
+    .download-btn {
+      padding: 22px 32px 20px;
+    }
+    .share-btn {
+      padding: 22px 48px 20px;
+    }
+  }
+}
+.sub-section {
+  > a.btn {
+    padding: 6px 17px 4px;
+  }
+}
+.sub-section-3 {
+  @include media-breakpoint-down(sm) {
+    margin-top: 110px;
+  }
+}
+
+.articles-open-newsletter-section {
+  .container {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+  input {
+    background-color: #525a5c;
+  }
+}
+
+.articles-open-card-section {
+  padding: 135px 0 144px;
+  background: $primary;
+  @include media-breakpoint-down(sm) {
+    padding: 96px 0 0;
+  }
+}
+.articles-open-section-header {
+  a.btn {
+    padding: 20px 38px;
+  }
+  @include media-breakpoint-down(sm) {
+    .section-large-title {
+      @include generate-fontsize(50px);
+    }
+  }
+}
+.articles-open-card-content {
+  .btn-link {
+    a.btn {
+      padding: 22px 36px 20px;
+    }
+  }
+}
+
+.quote-section {
+  padding: 24px 0 144px;
+  background: linear-gradient($primary, $secondary);
+  h2 {
+    margin: 18px 0 38px;
+    line-height: 1.1;
+    @include media-breakpoint-down(sm) {
+      margin-top: 25px;
+    }
+  }
+  a.btn {
+    padding: 20px 40px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 80px 0;
+    .img-content {
+      svg {
+        width: 188px;
+        height: 105px;
+      }
+    }
+  }
+}
+
+// End article open page
+
+// guides page
+
+.guides-page-section {
+  background: linear-gradient(#edc172, #fefaf5);
+  padding-bottom: 102px;
+}
+.guides-page-card-content {
+  .row {
+    --bs-gutter-x: 16px;
+  }
+}
+.guides-page-card-content {
+  .guides-card {
+    margin-bottom: $headingS;
+    .card-img {
+      height: 260px;
+      @include media-breakpoint-down(sm) {
+        height: 160px;
+      }
+    }
+    .card-body {
+      padding: 34px 28px 36px;
+      @include media-breakpoint-down(sm) {
+        padding: 28px 22px 36px;
+      }
+    }
+    .btn-icon {
+      width: 28px !important;
+      height: 28px !important;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.guides-page-newsletter-data {
+  margin: 30px 0 70px;
+  @include media-breakpoint-down(sm) {
+    margin: 44px 0 94px;
+  }
+  h2 {
+    line-height: 1.1;
+  }
+  input {
+    background-color: #f8ce88;
+  }
+  button {
+    @include media-breakpoint-down(sm) {
+      background-color: $secondary;
+    }
+  }
+}
+
+// End guides page
+
+// guides open page
+
+.guides-detail-section {
+  padding-bottom: 216px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 82px;
+  }
+}
+
+.guides-open-card-section {
+  @include media-breakpoint-down(sm) {
+    padding-top: 100px;
+  }
+}
+.guides-open-section-header {
+  a.btn {
+    padding: 20px 42px;
+  }
+}
+
+.guides-quote-section {
+  background: linear-gradient($secondary, $primary);
+  padding-top: 80px;
+  @include media-breakpoint-down(sm) {
+    padding: 94px 0 66px;
+  }
+}
+
+// End guides open page
+
+// FAQs page
+
+.FAQs-page-section {
+  padding: 235px 0 156px;
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 98px;
+  }
+}
+.FAQs-page-header {
+  padding-bottom: 150px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 120px;
+  }
+}
+.FAQs-page-accordion {
+  .accordion-item {
+    &:first-child {
+      border-top: 1px solid $gray-25;
+    }
+  }
+  .accordion-header {
+    @include media-breakpoint-down(sm) {
+      padding: 32px 0 22px;
+    }
+  }
+  .accordion-body {
+    a.btn {
+      padding: 22px 32px 20px;
+    }
+  }
+}
+
+.get-in-touch-section {
+  padding-top: 140px;
+  h2 {
+    line-height: 1.1;
+  }
+  @include media-breakpoint-down(sm) {
+    border-top: 1px solid $black;
+    padding: 100px 0;
+    h2 {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+// End FAQs page
+
+// contact page
+
+.contact-section {
+  padding: 245px 0 112px;
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 94px;
+  }
+}
+.contact-details {
+  h2 {
+    @include generate-fontsize(80px);
+    margin-bottom: 38px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 120px;
+  }
+  @include media-breakpoint-down(sm) {
+    h2 {
+      @include generate-fontsize(50px);
+      margin-bottom: 94px;
+    }
+  }
+}
+.contact-form-data {
+  h3 {
+    @include generate-fontsize(35px);
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(30px);
+      line-height: 1.3 !important;
+    }
+  }
+}
+
+.contact-learn-more-section {
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 94px;
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// End contact page
+
+// careers page
+
+.career-section {
+  background: linear-gradient($light, $primary);
+  padding: 208px 0 124px;
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 118px;
+  }
+}
+.career-header {
+  .section-large-title {
+    @include media-breakpoint-up(sm) {
+      @include generate-fontsize(60px);
+    }
+  }
+  p {
+    @include generate-fontsize(22px);
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(20px);
+      line-height: 1.3 !important;
+    }
+  }
+}
+.career-content {
+  padding-top: 100px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 64px;
+  }
+}
+.career-card {
+  background-color: rgba(253, 250, 246, 0.92);
+  padding: 90px 68px 90px 72px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 52px 20px 32px 22px;
+    border-radius: 10px;
+    margin-bottom: 34px;
+  }
+  h3 {
+    @include generate-fontsize(25px);
+    line-height: 1.04;
+  }
+  a.btn {
+    padding: 20px 68px;
+  }
+}
+.read-more-less-content {
+  -webkit-line-clamp: 4;
+  &.read-more {
+    -webkit-line-clamp: unset;
+  }
+  @include media-breakpoint-down(sm) {
+    -webkit-line-clamp: unset;
+  }
+  &.read-less {
+    -webkit-line-clamp: 4;
+  }
+  p {
+    @include generate-fontsize(17px);
+    line-height: 1.65;
+  }
+}
+
+.career-testimonial-section {
+  padding-bottom: 204px;
+  p {
+    line-height: 1.2;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 128px;
+    p {
+      @include generate-fontsize($headingXL);
+    }
+  }
+  a.btn {
+    padding: 20px 52px;
+  }
+}
+
+// End careers page
+
+// download page
+
+.download-section {
+  padding: 202px 0 156px;
+  background: linear-gradient($light, $secondary);
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 102px;
+  }
+}
+.download-content {
+  padding-top: 115px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 104px;
+  }
+}
+.download-card {
+  padding: $bodyS 44px $bodyS $bodyS;
+  margin-bottom: 22px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 22px 20px 25px 22px;
+    border-radius: $headingXXS;
+    margin-bottom: 42px;
+  }
+  .img-content {
+    width: 174px;
+    height: 125px;
+    border-radius: 20px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      height: 200px;
+      border-radius: $headingXXS;
+    }
+  }
+  .download-body {
+    @include media-breakpoint-down(lg) {
+      padding: 32px 0;
+    }
+    h2 {
+      @include generate-fontsize(30px);
+    }
+    p {
+      @include generate-fontsize(17px);
+      @include media-breakpoint-down(lg) {
+        -webkit-line-clamp: unset;
+      }
+      @include media-breakpoint-down(sm) {
+        opacity: 1 !important;
+        line-height: 1.57;
+      }
+    }
+  }
+  .download-btn {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      a {
+        width: 100%;
+        height: 58px;
+      }
+    }
+  }
+}
+
+.download-get-in-touch-section {
+  padding-top: 124px;
+  @include media-breakpoint-down(sm) {
+    padding: 100px 0 90px;
+    .img-content {
+      svg {
+        width: 146px;
+        height: 116px;
+      }
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// End download page
+
+// privacy policy page
+
+.privacy-policy-section {
+  padding: 204px 0 250px;
+  @include media-breakpoint-down(sm) {
+    padding: 192px 0 190px;
+  }
+}
+aside {
+  .privacy-policy-link-data {
+    top: 204px;
+    a.link {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 82px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: -36px;
+      a.link {
+        margin-right: 28px;
+      }
+    }
+    a.link {
+      @include generate-fontsize($bodyL);
+      &.active {
+        padding-left: $bodyS;
+      }
+      &:before {
+        height: 100%;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.privacy-policy-content {
+  h3 {
+    @include generate-fontsize(30px);
+  }
+  p {
+    @include generate-fontsize(17px);
+    line-height: 1.65;
+    opacity: 0.85;
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize($bodyL);
+      line-height: 1.78;
+      opacity: 1;
+    }
+  }
+}
+
+.redirect-section {
+  padding: 144px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 94px 0 90px;
+  }
+}
+.redirect-content {
+  .row {
+    --bs-gutter-x: 12px;
+    @include media-breakpoint-down(md) {
+      row-gap: 38px;
+    }
+  }
+  .card-body {
+    border-radius: 20px;
+    .card-img {
+      height: 434px;
+      @include media-breakpoint-down(lg) {
+        height: 320px;
+      }
+    }
+    h3 {
+      @include media-breakpoint-down(lg) {
+        @include generate-fontsize($headingM);
+      }
+      @include media-breakpoint-down(md) {
+        @include generate-fontsize(45px);
+      }
+    }
+  }
+}
+
+// End privacy policy page
+
+// search page
+
+.search-section {
+  padding: 242px 0 98px;
+  h5 {
+    @include generate-fontsize(17px);
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 188px 0 114px;
+    border-bottom: 1px solid $black;
+  }
+}
+.search-section-header {
+  h1 {
+    @include generate-fontsize(46px);
+    @include media-breakpoint-down(lg) {
+      @include generate-fontsize($headingL);
+      line-height: 1.5 !important;
+    }
+  }
+}
+.search-card {
+  padding: 78px 0 55px;
+  border-bottom: 1px solid rgba($color: $black, $alpha: 0.1);
+  .img-content {
+    width: 200px;
+    height: 160px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      height: 254px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 94px 0 0;
+    border: 0;
+    &:first-child {
+      padding-top: 78px;
+    }
+    .search-link-btn {
+      a {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+.search-body {
+  @include media-breakpoint-up(lg) {
+    padding-left: 44px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 24px !important;
+  }
+  h2 {
+    @include generate-fontsize(32px !important);
+    @include media-breakpoint-down(lg) {
+      line-height: 1.25 !important;
+    }
+  }
+  p {
+    line-height: 1.88 !important;
+    @include media-breakpoint-down(lg) {
+      -webkit-line-clamp: 3 !important;
+    }
+  }
+}
+
+.search-offer-section {
+  padding-bottom: 64px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 78px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 72px;
+  }
+}
+
+// End search page
+
+// other area sections page
+
+.other-area-hero-content {
+  h1 {
+    @include media-breakpoint-up(sm) {
+      @include generate-fontsize(60px);
+    }
+    @include media-breakpoint-down(sm) {
+      line-height: 1.1;
+    }
+  }
+  a.btn {
+    padding: 20px 72px;
+  }
+}
+
+.featured-section {
+  padding-bottom: 160px;
+  margin-top: -148px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 94px;
+    margin-top: -182px;
+  }
+}
+.featured-card-content {
+  .row {
+    --bs-gutter-x: 38px;
+    row-gap: 40px;
+    @include media-breakpoint-down(xl) {
+      --bs-gutter-x: 12px;
+    }
+  }
+}
+.featured-card {
+  padding: 72px 44px 60px 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  @include media-breakpoint-down(xl) {
+    padding: 58px 20px 42px 28px;
+  }
+  h2 {
+    @include generate-fontsize(30px);
+  }
+  p {
+    @include generate-fontsize(17px);
+  }
+  .btn-with-icon {
+    padding-bottom: 32px;
+    &:last-child {
+      padding: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 22px;
+    }
+    svg {
+      width: 38px;
+      height: 38px;
+      @include media-breakpoint-down(sm) {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  a.btn {
+    padding: 20px 72px;
+    &:hover {
+      color: $black !important;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+.text-area-section {
+  padding-bottom: 135px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 90px;
+  }
+}
+.text-area-content {
+  h2 {
+    @include media-breakpoint-up(sm) {
+      @include generate-fontsize(46px);
+      line-height: 1;
+    }
+  }
+  p {
+    line-height: 1.78;
+    &.text-truncate9 {
+      -webkit-line-clamp: 9;
+    }
+    @include media-breakpoint-down(lg) {
+      @include generate-fontsize(17px);
+      -webkit-line-clamp: unset;
+    }
+  }
+  a.btn {
+    padding: 20px 52px;
+  }
+}
+
+.other-area-banner-theme-section {
+  .img-content {
+    height: 718px;
+    @include media-breakpoint-down(md) {
+      height: 442px;
+    }
+  }
+}
+
+// End other area sections page
+
+// awards page
+
+.awards-section {
+  padding: 208px 0 125px;
+  @include media-breakpoint-down(sm) {
+    padding: 230px 0 98px;
+  }
+}
+.awards-section-header {
+  padding-bottom: 115px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 106px;
+  }
+  h1 {
+    @include media-breakpoint-up(sm) {
+      @include generate-fontsize(60px);
+      line-height: 1;
+    }
+  }
+  p {
+    @include generate-fontsize(22px);
+    @include media-breakpoint-down(sm) {
+      @include generate-fontsize(20px);
+      line-height: 1.3;
+    }
+  }
+}
+.awards-content {
+  .row {
+    --bs-gutter-x: 30px;
+    row-gap: 44px;
+    @include media-breakpoint-down(sm) {
+      row-gap: 42px;
+    }
+  }
+}
+.awards-card {
+  padding: 32px 56px 32px 34px;
+  border: 1px solid #70707088;
+  @include media-breakpoint-down(xl) {
+    padding: 30px 12px 27px 30px;
+  }
+  .card-img {
+    width: 154px;
+    height: 154px;
+    @include media-breakpoint-down(sm) {
+      width: 98px;
+      height: 98px;
+    }
+  }
+  .card-body {
+    @include media-breakpoint-down(sm) {
+      padding-top: 26px;
+      p {
+        -webkit-line-clamp: 3;
+      }
+    }
+    h2 {
+      @include generate-fontsize(30px);
+    }
+  }
+}
+
+// End awards page

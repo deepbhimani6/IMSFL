@@ -1,0 +1,146 @@
+// select2 dropdown design
+
+.select2-container--default {
+  .select2-results__option--selected {
+    background-color: $white;
+    color: $black;
+  }
+  .select2-results__option {
+    font-weight: 300;
+    padding: 6px 22px;
+  }
+  .select2-results__option--highlighted {
+    &.select2-results__option--selectable {
+      background-color: $secondary;
+    }
+  }
+  .select2-selection--single {
+    background-color: #374045;
+    height: auto;
+    border-color: transparent;
+    border-radius: 20px;
+    @include generate-transition(border-color, 0.15s, ease-in-out);
+    &:focus {
+      border-color: $secondary;
+    }
+    .select2-selection__rendered {
+      padding: 17px 40px 17px 22px;
+      line-height: 1;
+      font-weight: 400;
+      color: $light;
+      border: 0;
+    }
+    .select2-selection__arrow {
+      height: auto;
+      top: 50%;
+      right: 35px;
+      transform: translateY(-50%);
+      width: auto;
+      b {
+        border-color: $light transparent transparent transparent;
+        border-width: 6px 6px 0 6px;
+      }
+      @include media-breakpoint-down(sm) {
+        right: 30px;
+        b {
+          border-width: 7px 6px 0 6px;
+        }
+      }
+    }
+  }
+}
+
+.select2-dropdown {
+  border-color: $secondary;
+  border-radius: 20px;
+  overflow: hidden;
+  color: $white;
+  background-color: rgb(55, 64, 69);
+}
+
+// articles page
+.articles-page-section-header {
+  form {
+    input {
+      border-radius: 20px;
+      padding: 18px 45px 18px 26px;
+      @include generate-placeholder($black, $bodyM);
+    }
+  }
+}
+
+// contact page
+.contact-form {
+  .row {
+    > * {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 5px;
+        &:nth-child(odd) {
+          padding-right: 8px;
+        }
+        &:nth-child(even) {
+          padding-left: 8px;
+        }
+      }
+      margin-bottom: 8px;
+    }
+    input,
+    textarea {
+      @include generate-fontsize($bodyM);
+      border-radius: 20px;
+      line-height: 1;
+      font-weight: 400;
+      color: $light;
+      background-color: #374045;
+      padding: 17px 22px;
+      @include generate-placeholder($light, $bodyM);
+      &:focus {
+        border-color: $secondary;
+        color: $light;
+      }
+    }
+    textarea {
+      height: 120px;
+      resize: none;
+      @include media-breakpoint-down(sm) {
+        height: 200px;
+      }
+    }
+  }
+  button {
+    background-color: $secondary;
+    &:hover {
+      color: $light;
+      border-color: $white;
+    }
+  }
+}
+.form-checkbox {
+  .form-check-input {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-color: $light;
+    cursor: pointer;
+    &:checked {
+      background-image: none;
+      background-color: transparent;
+      &::before {
+        content: "✔";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+      }
+    }
+  }
+  label {
+    margin-left: 12px;
+    cursor: pointer;
+    @include media-breakpoint-down(sm) {
+      margin-left: 26px;
+    }
+  }
+}

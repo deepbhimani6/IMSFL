@@ -1,0 +1,65 @@
+footer {
+  padding: 54px 0 20px;
+  @include media-breakpoint-down(sm) {
+    padding: 102px 0 76px;
+  }
+}
+
+.social-icon {
+  @include media-breakpoint-down(sm) {
+    gap: 58px;
+  }
+  h3 {
+    @include generate-fontsize(25px);
+  }
+  .call {
+    margin-right: 84px;
+  }
+}
+.newsletter-body {
+  h4 {
+    @include generate-fontsize(25px);
+    @include media-breakpoint-down(sm) {
+      line-height: 1.1 !important;
+    }
+  }
+  .img-content {
+    @include media-breakpoint-down(sm) {
+      svg {
+        height: 100px;
+        width: 68px;
+      }
+    }
+  }
+  .newsletter {
+    input {
+      background-color: rgba(255, 255, 255, 0.14);
+      padding: $bodyL 55px $bodyL 30px;
+      border-radius: 20px;
+      @include generate-placeholder($light, $bodyL);
+    }
+    button {
+      width: 42px;
+      height: 42px;
+      border-radius: $buttonSize;
+    }
+  }
+}
+
+.bottom-footer {
+  ul {
+    li {
+      margin: 0 30px 24px 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        opacity: 35%;
+        &:hover {
+          color: $light;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

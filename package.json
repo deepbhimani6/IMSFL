@@ -1,0 +1,31 @@
+{
+  "name": "insurance_colud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx mix watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.26",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "fancybox": "^3.0.1",
+    "jquery": "^3.6.0",
+    "laravel-mix": "^6.0.24",
+    "lightbox2": "^2.11.3",
+    "popper.js": "^1.16.1",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
+  }
+}

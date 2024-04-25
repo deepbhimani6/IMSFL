@@ -1,0 +1,132 @@
+.card-hover {
+  .card-img {
+    overflow: hidden;
+    img {
+      transform: scale(1);
+      @include generate-transition(all, 0.4s, ease-in-out);
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.card-label .btn {
+  padding: 6px 19px;
+  @include media-breakpoint-down(sm) {
+    @include generate-fontsize($bodyXS);
+    padding: 5px 13px;
+  }
+}
+
+// pages cards
+.offer-card {
+  .card-header,
+  .card-body {
+    padding: 20px 26px 20px 28px;
+    @include media-breakpoint-down(sm) {
+      padding: 10px 12px 10px 16px;
+    }
+  }
+  .card-header {
+    h3 {
+      @include generate-fontsize(35px);
+      @include media-breakpoint-down(md) {
+        @include generate-fontsize(26px);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      h3 {
+        @include generate-fontsize($bodyL);
+      }
+      .btn-icon {
+        height: $bodyL;
+        width: $bodyL;
+        svg {
+          height: 8px;
+        }
+      }
+    }
+  }
+  .card-img {
+    border-radius: 0;
+    height: 172px;
+    @include media-breakpoint-down(sm) {
+      height: 92px;
+    }
+  }
+  .card-body {
+    padding-bottom: $bodyL;
+    background-color: #18242a;
+    @include media-breakpoint-down(sm) {
+      padding: $taglineSize $bodyS $taglineSize 15px;
+      h5 {
+        @include generate-fontsize($bodyXS);
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.articles-card {
+  border-radius: $menuSize;
+  .card-label {
+    top: 28px;
+    left: 28px;
+    a {
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      top: 22px;
+      left: 22px;
+      a {
+        padding: 5px 12px;
+        @include generate-fontsize($bodyXS);
+        font-weight: 400 !important;
+      }
+    }
+  }
+  .card-img {
+    border-radius: 0;
+    height: 230px;
+    @include media-breakpoint-down(sm) {
+      height: 182px;
+    }
+  }
+  .card-body {
+    padding: 30px 28px 28px;
+    @include media-breakpoint-down(xl) {
+      padding: 18px 22px;
+    }
+    .card-title {
+      @include generate-fontsize(22px);
+      line-height: 1.14;
+      @include media-breakpoint-down(sm) {
+        @include generate-fontsize(20px);
+        line-height: 1.1;
+      }
+    }
+    .card-text {
+      @include generate-fontsize($headingXXS);
+      @include media-breakpoint-down(sm) {
+        @include generate-fontsize($bodyXS);
+      }
+    }
+    .btn-icon {
+      width: 28px;
+      height: 28px;
+      @include media-breakpoint-down(sm) {
+        width: 22px;
+        height: 22px;
+        svg {
+          height: 10px;
+        }
+      }
+    }
+  }
+}

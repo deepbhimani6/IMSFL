@@ -1,0 +1,119 @@
+.font-content-theme {
+  @include generate-fontsize($buttonSize);
+  line-height: 1.87;
+}
+
+.text-truncate {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.text-truncate2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-truncate3 {
+  -webkit-line-clamp: 3;
+}
+
+.text-truncate4 {
+  -webkit-line-clamp: 4;
+}
+
+.text-truncate6 {
+  -webkit-line-clamp: 6;
+}
+
+/* input form css */
+.form-control {
+  background: $white;
+  line-height: 2;
+  border: 1px solid transparent;
+  @include generate-fontsize($buttonSize);
+  padding: 10px 1.5rem;
+
+  &::placeholder {
+    color: #141414;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+/* End input form css */
+
+// social media
+.social-media {
+  li {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    width: $headingXL;
+    height: $headingXL;
+    border: 1px solid rgba(253, 250, 246, 0.35);
+    border-radius: $buttonSize;
+    &:hover {
+      border-color: transparent;
+      color: $light;
+    }
+    &.facebook:hover {
+      background-color: #4267b2;
+    }
+    &.twitter:hover {
+      background-color: #1da1f2;
+    }
+    &.instagram:hover {
+      background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+    }
+    &.youtube:hover {
+      background-color: #ff0000;
+    }
+  }
+}
+
+.img-gradient {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba($color: $black, $alpha: 0.22);
+  }
+}
+
+.hover-underline {
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $lightBlack;
+      @include generate-transition(all, 0.3s, ease);
+    }
+    &:hover:before {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.text--light {
+  color: $light;
+}
+
+.bg--light {
+  background-color: $light;
+}
+
+.text--black {
+  color: $black;
+}
+
+.bg--black {
+  background-color: $black;
+}
+
+.bg-lightBlack {
+  background-color: $lightBlack;
+}
+
+.text-lightgray {
+  color: $lightgray;
+}
+
+.transition {
+  @include generate-transition(all, 0.3s, ease-in);
+}
+
+.z-index-9 {
+  z-index: 9;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

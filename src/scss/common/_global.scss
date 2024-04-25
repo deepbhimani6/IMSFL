@@ -1,0 +1,234 @@
+@import "variables";
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "roc-grotesk";
+  cursor: url("../images/icon/cursor.svg"), auto;
+
+  color: $lightBlack;
+}
+
+.container,
+.container-md,
+.container-sm {
+  @include media-breakpoint-only(xxl) {
+    max-width: 1352px;
+  }
+}
+
+.container {
+  @include media-breakpoint-down(sm) {
+    padding: 0 36px;
+  }
+}
+
+.font-worksans {
+  font-family: "Work Sans";
+}
+
+a {
+  color: $lightBlack;
+  text-decoration: none;
+  &:hover {
+    color: unset;
+  }
+}
+
+* {
+  outline: none !important;
+}
+
+a,
+input,
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.align--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@for $i from 1 through 20 {
+  .height--#{$i*5} {
+    height: #{5 * $i}vh;
+  }
+}
+
+@for $i from 1 through 40 {
+  .padding-top--#{$i*5}px {
+    padding-top: #{5 * $i}px;
+  }
+}
+
+/*------- Font Size Classes -------*/
+
+.headingXL {
+  @include generate-fontsize($headingXL);
+}
+
+.headingL {
+  @include generate-fontsize($headingL);
+}
+
+.headingM {
+  @include generate-fontsize($headingM);
+}
+
+.headingS {
+  @include generate-fontsize($headingS);
+}
+
+.headingXS {
+  @include generate-fontsize($headingXS);
+}
+
+.headingXXS {
+  @include generate-fontsize($headingXXS);
+}
+
+.bodyL {
+  @include generate-fontsize($bodyL);
+}
+
+.bodyM {
+  @include generate-fontsize($bodyM);
+}
+
+.bodyS {
+  @include generate-fontsize($bodyS);
+}
+
+.bodyXS {
+  @include generate-fontsize($bodyXS);
+}
+
+.buttonSize {
+  @include generate-fontsize($buttonSize);
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+/*------- Miscellaneous Classes -------*/
+
+.half--opacity {
+  opacity: 0.5;
+}
+
+.border--radius {
+  border-radius: 20px;
+}
+
+.border--dark {
+  border-color: $black !important;
+}
+
+.absolute--center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.default--button {
+  display: inline-block;
+  position: relative;
+  color: $white;
+  font-weight: 500;
+  padding: 15px 25px;
+  min-width: 130px;
+  border: none;
+  background: $black;
+  text-align: center;
+  @include generate-fontsize($buttonSize);
+  appearance: none;
+  -webkit-appearance: none;
+  @include generate-transition(all, 0.5s, ease);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.underline--link {
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+
+.pointer-event-none {
+  pointer-events: none;
+}
+
+// default css
+li {
+  list-style: none;
+}
+
+.object-cover {
+  object-fit: cover;
+  object-position: center;
+}
+
+.slick-overflow .slick-list {
+  overflow: visible;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.scroll-xy-none::-webkit-scrollbar {
+  display: none;
+}
+
+.larger-title {
+  @include generate-fontsize(100px);
+  line-height: 0.9;
+}
+
+.section-large-title {
+  @include generate-fontsize(50px);
+  line-height: 1;
+  @include media-breakpoint-down(sm) {
+    line-height: 1.1;
+  }
+}
+
+.small-title {
+  @include generate-fontsize(35px);
+  line-height: 1;
+}
+
+.img-with-text {
+  .img-content {
+    margin: 0 -94px 0 -38px;
+    transform: translateY(-5px);
+  }
+  @include media-breakpoint-down(xl) {
+    @include generate-fontsize(88px);
+  }
+  @include media-breakpoint-down(lg) {
+    .img-content {
+      margin: -35px 0 -23px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    @include generate-fontsize(70px);
+  }
+}

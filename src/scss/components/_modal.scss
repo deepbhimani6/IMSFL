@@ -1,0 +1,59 @@
+// contact pages
+.form-modal {
+  .modal-dialog {
+    max-width: 562px;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+  .modal-content {
+    background: linear-gradient($primary, $light);
+    @include media-breakpoint-up(md) {
+      padding: 12px 12px 60px;
+      border-radius: 20px;
+    }
+    padding: 42px 36px;
+  }
+  .modal-body {
+    @include media-breakpoint-down(md) {
+      padding-top: 116px;
+    }
+    h5 {
+      line-height: 1.35;
+      span {
+        @include generate-fontsize($headingL);
+      }
+    }
+    form {
+      input {
+        padding: $headingXXS 20px;
+      }
+      label {
+        @include generate-fontsize($bodyXS);
+        padding: $bodyXS 20px;
+        border: 2px dashed rgba($color: $black, $alpha: 0.25);
+      }
+      input,
+      label {
+        @include media-breakpoint-down(sm) {
+          border-radius: 15px !important;
+        }
+      }
+    }
+  }
+}
+.modal-header {
+  padding-bottom: 22px;
+  button {
+    width: $headingM;
+    height: $headingM;
+    @include generate-transition(all, 0.5s, ease);
+    &:hover {
+      transform: rotate(90deg);
+    }
+    @include media-breakpoint-down(sm) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
