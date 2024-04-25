@@ -1,1 +1,3 @@
-# Insurance-colud
+# After Clone
+
+Use commend "npm i"
